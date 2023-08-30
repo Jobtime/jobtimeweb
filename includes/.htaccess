@@ -1,0 +1,21 @@
+ 
+# Servage Folder Protection
+AuthUserFile /home25/sub032/sc75253-XNXJ/www.jobtime.com.ar/.htpasswd
+AuthGroupFile /dev/null
+AuthName EnterPassword
+AuthType Basic
+require valid-user
+ 
+RewriteEngine On
+
+#Home
+RewriteRule ^/$ ?action=mostrar_home_page [NC,L]
+RewriteRule ^([0-9]+)$ ?action=mostrar_home_page&page=$1 [NC,L]
+
+#Categorias
+RewriteRule ^buscar_empleo$ ?action=buscar_empleo [NC,L]
+RewriteRule ^buscar_empleo/(.*)/([0-9]+)$ ?action=buscar_empleo&lateral=$2 [NC,L]
+RewriteRule ^buscar_empleo/(.*)/([0-9]+)/([0-9]+)$ ?action=buscar_empleo&lateral=$2&page=$3 [NC,L]
+
+#Secciones
+RewriteRule ^([a-zA-Z_]+)$ ?action=$1 [NC,L]

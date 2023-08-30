@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>JobTime - Consultora de trabajos empresarial</title>
+<!-- InstanceEndEditable -->
+
+<link rel="shortcut icon" href="/drupal_27334/misc/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" href="/css/style.css" />
+<script  type="text/javascript">
+ function vacio(q) {  
+         for ( i = 0; i < q.length; i++ ) {  
+                 if ( q.charAt(i) != " " ) {  
+                         return true  
+                 }  
+         }  
+         return false  
+}
+ function validacion_news(formulario) {  
+  
+    var er_nombre = /^([a-z]|[A-Z]|á|é|í|ó|ú|ñ|ü|\s|\.|-)+$/            //letras, '.' y '-' o vacio  
+    var er_email = /^(.+\@.+\..+)$/  
+        
+           
+       
+       
+  //comprueba campo de email  
+    if(!er_email.test(formulario.mail_news.value)) {   
+        alert('Contenido del campo E-MAIL no válido.')  
+       return false  
+     }   
+	 
+	 
+	       
+  
+   
+   // alert('Los campos introducidos son CORRECTOS.')  
+    return true;           //cambiar por return true para ejecutar la accion del formulario  
+ }  
+</script>
+<script src="/js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="/js/reflection.js" type="text/javascript"></script>
+<script src="/js/jquery-ui.min.js" type="text/javascript"></script>
+<!-- Start Kampyle Css -->
+<link rel="stylesheet" type="text/css" media="screen" href="http://cf.kampyle.com/k_button.css" />
+<!-- End Kampyle Css -->
+<!-- InstanceBeginEditable name="head" -->
+<script type="text/javascript" src="js/jquery.flip.min.js"></script>
+<script src="/js/validacion_empresa.js" type="text/javascript"></script>
+<style>
+#form2{
+		margin:1em 0;
+		color:#fff;
+		width:500px; /* customize width, this form have fluid layout */
+		}
+	#form2 h3{
+		margin:0;
+		background:#57a700 url(../images/form_heading.gif) repeat-x;		
+		color:#fff;
+		font-size:20px;
+		border:1px solid #57a700;
+		border-bottom:none;
+		width:500px;
+		}		
+	#form2 h3 span{
+		display:block;
+		padding:10px 20px;
+		background:url(../images/form_ico.gif) no-repeat 93% 50%;	
+		width:500px;		
+		}	
+		
+	h3{
+		margin:0;
+		background:#57a700 url(../images/form_heading.gif) repeat-x;		
+		color:#fff;
+		font-size:20px;
+		border:1px solid #57a700;
+		border-bottom:none;
+		width:380px;
+		}		
+	h3 span{
+		display:block;
+		padding:10px 20px;
+		background:url(../images/form_ico.gif) no-repeat 93% 50%;	
+		width:330px;		
+		}					
+	#form2 fieldset{
+		margin:0;
+		padding:0;
+		border:none;	
+		border-top:3px solid #000;
+		width:500px;
+		background:#000 url(../images/form_top.gif) repeat-x;		
+		padding-bottom:1em;
+		}		
+	#form2 legend{display:none;}	
+	#form2 fieldset p{width:300px;
+		margin-left:30px;}	
+	#form2 fieldset p label{display:block;}
+	#form2 fieldset .pe{margin:.5em 20px;}	
+	#form2 fieldset .pe label{display:block;}
+	#form2 .pe label{display:block;}	
+	#form2 fieldset p input, #form2 textarea{		
+		width:272px;
+		border:1px solid #111;
+		background:#282828 url(../images/form_input.gif) repeat-x;
+		padding:5px 3px;
+		color:#fff;
+		}
+		#form2 .inpu{		
+		
+		border:1px solid #111;
+		background:#282828 url(../images/form_input.gif) repeat-x;
+		padding:5px 3px;
+		color:#fff;
+		margin-bottom:10px; 
+		width:300px;
+		margin-left:30px;
+		
+		}		
+	#form2 textarea{
+		height:125px;
+		overflow:auto;
+		}					
+	#form2 fieldset p.submit{
+		text-align:right;
+		}	
+	#form2 fieldset .boton{
+		padding:0 20px;
+		height:32px;
+		line-height:32px;		
+		border:1px solid #70ad2e;
+		background:#5aae00 url(../images/form_button.gif) repeat-x;
+		color:#fff;
+		cursor:pointer;		
+		text-align:center;
+		margin-right:15px;	
+		}		
+
+</style>
+
+
+<!-- InstanceEndEditable -->
+
+</head>
+<body>
+
+<div class="min-width{fondo}">
+	 
+    <div id="main">
+    
+		<div id="header">
+       		<div class="top_head-row1">
+            	<div class="izq">
+                	<p style="margin-top:5px; line-height:25px; float:left;"><img src="/images/Argentina-Flag.png" alt="argentina" style="vertical-align:middle; float:left;" /> <strong style="color:#81a60f; margin-left:15px;">Usuarios:</strong> {cantidad_user}  | <strong style="color:#81a60f;">Empleos Vigentes:</strong > {empleos_vigentes} </p>
+                </div>
+                
+                <div class="der">
+                <div class="redessociales">
+                    	<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true, username:"rodrigojobtime"};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4d94ec52099ec3ee"></script>
+<!-- AddThis Button END -->
+                    
+                    </div>
+                	<div  class="usuario_logeado{mostrar}">
+                	<div style="float:left; height:30px;">
+                    <p style="padding-top:10px; padding-right:15px; font-size:12px; font-weight:bold; color:#81a60f;">Hola! <span style="color:#3c3c3c">{user}</span>&nbsp;|&nbsp;<a href="/?action=logearce" title="Panel de usuario">Mi Panel</a>&nbsp;|&nbsp;<a href="/?action=logout" title="Salir">Salir</a>&nbsp;|&nbsp;</p>
+                    </div>
+                </div>
+                
+
+                </div>
+            </div>
+			<div class="head-row1" >
+				<div class="col1">
+					<a href="/" title="Jobtime"><img src="/images/logo.png" alt="Jobtime" /> </a>
+				</div>
+				<div class="col2">
+					<div class="pr-menu">
+						<ul class="links primary-links">
+							<li class="first menu-228"><a href="/" title="Inicio" ><span class="menu-228"><span>Inicio</span></span></a></li>
+							<li class="menu-210"><a href="/quienes_somos" title="Quienes Somos" ><span title="" class="menu-210"><span>Quienes Somos</span></span></a></li>
+							<li class="menu-210"><a href="/Servicios" title="Servicios" ><span title="" class="menu-210"><span>Servicios</span></span></a></li>
+							<li class="menu-215"><a href="/empleos" title="Empleos" ><span title="" class="menu-215"><span>Empleos</span></span></a></li>
+							<li class="menu-211"><a href="/clientes" title="Clientes" ><span title="" class="menu-211"><span>Clientes</span></span></a></li>
+							<li class="menu-237"><a href="/ingresarCv" title="Engresar CV" ><span title="" class="menu-237"><span>Ingresar CV</span></span></a></li>
+							<li class="last menu-212"><a href="/contacto" title="Contacto" ><span title="" class="menu-212"><span>Contacto</span></span></a></li>
+						</ul>
+					</div>
+				</div>
+                
+			</div>
+            <!-- InstanceBeginEditable name="bajo_menu" -->
+				<div class="mensaje{oculto_empresa}"><p style="color:#093; font-size:16px; padding:15px; background:#FFF; color:#090;">La empresa ya fue dada de alta con <strong>EXITO</strong> en nuestro sistema, a la brevedad nos comunicaremos con usted para brindarle su usuario y contraseña, gracias por confiar en JobTime.</p></div>
+          <!-- InstanceEndEditable -->
+		</div>
+        <!-- InstanceBeginEditable name="contenido" -->
+		<div style="width:980px; float:left;">
+            <div  style="float:right; width:380px; margin-top:10px;">
+            	<h3><span>Ellas ya forman parte de JobTime</span></h3>
+                <div class="sponsorListHolder" style="width:380px; padding-left:10px; margin-top:5px;">
+
+		
+      <!-- BEGIN logo_empresas -->
+				<div class="sponsor" title="Click para ver los empleos de {razon_social}">
+					<div class="sponsorFlip">
+						<img src="../images/empresas/{logo}.jpg" alt="{razon_social}" width="110" height="100"   />					</div>
+					
+					<div class="sponsorData">
+						<div class="sponsorDescription">
+							<p style="text-align:center; font-size:12px;">{razon_social}</p>
+                            <p style="color:#009933; font-size:10px; text-align:center;"><a href="/buscar-empleo/{razon_social}" title="Empleos de {razon_social}">Ver empleos de {razon_social}</a></p>
+                           		</div>
+						<div class="sponsorURL">
+													</div>
+					</div>
+				</div>
+				
+		<!-- END logo_empresas -->
+        
+        
+    	<div class="clear"></div>
+    </div>
+            </div>
+            <div  style="float:right; width:560px; margin-right:20px;">
+            	<form  id="form2" method="post" action="/index.php?action=enviar_empresa_captcha" onsubmit="return validacion(this)" name="formulario"  enctype="multipart/form-data">
+			<h3><span>Registro de empresa</span></h3>
+		
+			<fieldset>
+				<p class="first" style="margin-top:10px;">
+					<label for="fname" style="width:300px; margin-left:30px; font-weight:bold;">Razon Social</label><br />
+					<input type="text" name="razon_social" class="inpu" id="razon_social" size="30"  value="{razon}" /><br />
+				</p>
+				<p >
+					<label for="fname" style="width:300px; margin-left:30px; font-weight:bold;">CUIT / CUIL</label><br />
+					<input type="text" name="cuit" id="cuit" class="inpu"  size="30" value="{cuit}" />
+				</p>
+				<p >
+					<label for="lname" style="width:300px; margin-left:30px; font-weight:bold;">Direcci&oacute;n	</label><br />
+					<input type="text" name="Direccion" id="Direccion" class="inpu"  size="30" />
+				</p>																					
+				<p >
+					<label for="lname" style="width:300px; margin-left:30px; font-weight:bold;">Telefono</label><br />
+                    <input  name="Telefono" id="Telefono" class="inpu"   value="{tel}" type="text" >
+				</p>
+                <p >
+                <label for="email" style="width:300px; margin-left:30px; font-weight:bold;">Email de Contacto</label><br />
+					<input  name="email" id="email" value="{mail}" type="text" class="inpu" >
+                </p>
+                <p >
+                <label for="email" style="width:300px; margin-left:30px; font-weight:bold;">Nombre de Contacto</label><br />
+					<input  name="nombreContacto" id="nombreContacto" class="inpu" value="" type="text" >
+                </p>
+                <p >
+                <label for="email" style="width:300px; margin-left:30px; font-weight:bold;">Ciudad</label><br />
+					<input  name="Ciudad" id="Ciudad" value="" class="inpu" type="text" >
+                </p>	
+                <p >
+                <label for="email" style="width:300px; margin-left:30px; font-weight:bold;">Provincia</label><br />
+					<input  name="Provincia" id="Provincia" value="" class="inpu" type="text" >
+                </p>	
+                <p >
+                <label for="email" style="width:300px; margin-left:30px; font-weight:bold;">P&aacute;gina WEB	</label><br />
+					<input  name="web" id="web" value="" type="text" class="inpu" style="width:315px;" >
+                </p>
+                <p>
+                	 <img src="../captcha/imagen_captcha.php"/> <input type="text" name="captcha" id="captcha" maxlength="6" size="6" style="width:60px;"/>
+                </p>
+                 <div class="alerta{none}">C&oacute;digo Erroneo</div>
+							
+                 <p > <input type="checkbox" checked="checked" name="aceptar" style="width:20px; margin-left:30px; height:20px; float:left; border:none;" /> Acepto <a href="/terminios" target="_blank" title="TERMINOS Y CONDICIONES" >terminos y condiciones </a>de jobtime</p>	
+             	
+				<p class="submit"><input  name="submit" value="Enviar" type="submit" class="boton" ></p>		
+							
+			</fieldset>		 
+
+						</form>
+            </div>
+        
+        </div>
+				<div style="width:980px; float:left; margin-top:20px; margin-bottom:50px;">
+            <p style="font-size:15px; margin-left:20px; font-style:italic;">Nuestra meta hacia las empresas es brindarle una herramienta útil en el proceso de búsqueda y selección  de personal.</p><br />
+            <p style="font-size:15px; margin-left:20px; font-style:italic;">Confiamos plenamente en nuestro trabajo y seriedad, intentando fortalecer los vínculos con el sector empresarial
+y que éste en su calidad de empleador, pueda contar con el mejor capital humano.</p>
+          </div>
+      	<!-- InstanceEndEditable -->
+	</div>
+	<div id="footer" >
+		<div style="width:980px; margin:auto;">
+        <div class="bloques">
+         <ul >
+			<li class="titulo">USUARIOS</li>
+            <li><a href="/ingresarCv" title="Nuevo Usuario">Nuevo Usuario</a></li>
+             <li><a href="/recuperar" title="Recordar Contrase&ntilde;a">Recordar Contrase&ntilde;a</a></li>
+			<li><a href="/empleos" title="Ofertas de trabajo">Ofertas de trabajo</a></li>
+            <li><a href="/ayuda.pdf" title="Ayuda" target="_blank">Ayuda</a></li>
+            </ul>
+        </div>
+        <div class="bloques">
+         <ul >
+         <li class="titulo">EMPRESAS</li>
+			<li><a href="/nueva_empresa" title="Registrar Empresa" rel="facebox">Registrar Empresa</a></li>
+			<li><a href="/Servicios" title="Servicios">Servicios</a></li>
+            <li><a href="/clientes" title="Nuestros Clientes">Nuestros Clientes</a></li>
+            </ul>
+        </div>
+        <div class="bloques">
+         <ul >
+			<li class="titulo">JOBTIME</li>
+            <li><a href="/quienes_somos" title="Quienes Somos">Quienes Somos</a></li>
+			<li><a href="/contacto" title="Contacto">Contacto</a></li>
+            <li><a href="/paginas_amigas" title="Páginas Amigas">Páginas Amigas</a></li>
+            <li><a href="/mapa" title="Mapa del Sito">Mapa del Sito</a></li>
+            </ul>
+        </div>
+        <div class="ultimo_bloques">
+         <form action="/?action=newsletter" method="post" onsubmit="return validacion_news(this)" name="formulario">
+         <ul >
+			
+            <li class="titulo">MANTENTE INFORMADO</li>
+            <li class="leyenda">Recibí las últimas ofertas de trabajo en tu Mail</li>
+			<li><input type="text" name="mail_news" id="mail_news" value="TU E-MAIL" /><input type="submit" value="ENVIAR" class="boton_news" /></li>
+            </ul>
+         </form>   
+        </div>
+        </div>
+ 	</div>
+    <div class="pie_terminos">
+    <div class="izquierda">
+    <p>Copyright @ 2010 por JobTime. Todos los derechos reservados.  - <a href="/terminios" title="Terminos y condiciones">Terminos y condiciones. </a></p>
+    </div>
+    <div class="derecha">
+    <ul class="menu_pie_der">
+       		
+			 <li><a href="http://www.linkedin.com/companies/jobtime-empleos" title="Encontra Jobtime linkedin" target="_blank"><img src="/images/footer_link4.gif" alt="Encontranos en Linkedin" /></a></li>
+            <li><a href="http://www.facebook.com/jobtime" title="Encontra Jobtime Facebook" target="_blank"><img src="/images/footer_link2.gif" alt="Encontranos en Facebook" /></a></li>
+			<li><a href="http://www.twitter.com/empleosjobtime" title="Encontra Jobtime en Twitter" target="_blank" ><img src="/images/footer_link1.gif" alt="Encontranos en Twitter" /></a></li>
+		</ul>
+        </div>
+    </div>
+</div>
+<!--Start Kampyle Feedback Form Button-->
+
+<div id='k_close_button' class='k_float kc_top_sl kc_right'></div><div><a href='http://www.kampyle.com/feedback_form/ff-feedback-form.php?site_code=4685003&amp;lang=es&amp;form_id=54371'  target='kampyleWindow' id='kampylink' class='k_float k_top k_right' onclick="javascript:k_button.open_ff('site_code=4685003&amp;lang=es&amp;form_id=54371');return false;"><img src="http://cf.kampyle.com/buttons/es/green/es-green-band-up-right.gif" alt="Feedback Form" border="0"/></a></div>
+
+<script src="http://cf.kampyle.com/k_button.js" type="text/javascript"></script>
+<script src="http://cf.kampyle.com/k_push.js" type="text/javascript"></script>
+<!--End Kampyle Feedback Form Button-->
+</body>
+
+<!-- InstanceEnd --></html>

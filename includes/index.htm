@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>JobTime - Ofertas de empleos y trabajo en Tandil, Azul, Olavarria y la zona</title>
+<meta http-equiv="Content-Language" content="es" />
+<meta name="title" content="Portal de búsqueda de empleos y trabajo en Tandil, Azul, Olavarria y la Zona" />
+<meta name="Description" content="El portal de búsqueda y selección de personal líder a nivel zonal. Ofrecimientos de trabajos y empleos en Tandil, Azul, Olavarria y la zona. Publicación gratuita de ofertas de trabajo y empleo, al igual que carga de currículos. Banco de Cv´s en Tandil, Azul, Olavarria, Buenos Aires y toda Argentina." />
+<meta name="keywords" content="Empleos Tandil, Consultoras Tandil, Selección de personal Tandil, Búsqueda de empleos, Ofertas laborales Tandil, Se necesita en Tandil, Empleos provincia de Buenos Aires, Empleos zona Tandil, Laboral Tandil, Empleos en tandil, Jobtime, Jobtime en tandil, jobtime consultora, jobtime consultora empresarial, consultora empresarial, empleo tandil, trabajo en tandil, jobtime trabajo, trabajo tandil, Busqueda de trabajo, Ofertas de Trabajo."/>
+<!-- InstanceEndEditable -->
+
+<link rel="shortcut icon" href="/drupal_27334/misc/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" href="/css/style.css" />
+<script  type="text/javascript">
+ function vacio(q) {  
+         for ( i = 0; i < q.length; i++ ) {  
+                 if ( q.charAt(i) != " " ) {  
+                         return true  
+                 }  
+         }  
+         return false  
+}
+ function validacion_news(formulario) {  
+  
+    var er_nombre = /^([a-z]|[A-Z]|á|é|í|ó|ú|ñ|ü|\s|\.|-)+$/            //letras, '.' y '-' o vacio  
+    var er_email = /^(.+\@.+\..+)$/  
+        
+           
+       
+       
+  //comprueba campo de email  
+    if(!er_email.test(formulario.mail_news.value)) {   
+        alert('Contenido del campo E-MAIL no válido.')  
+       return false  
+     }   
+	 
+	 
+	       
+  
+   
+   // alert('Los campos introducidos son CORRECTOS.')  
+    return true;           //cambiar por return true para ejecutar la accion del formulario  
+ }  
+</script>
+<script src="/js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="/js/reflection.js" type="text/javascript"></script>
+<script src="/js/jquery-ui.min.js" type="text/javascript"></script>
+<!-- Start Kampyle Css -->
+<link rel="stylesheet" type="text/css" media="screen" href="http://cf.kampyle.com/k_button.css" />
+<!-- End Kampyle Css -->
+<!-- InstanceBeginEditable name="head" -->
+  <link href="css/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="js/facebox.js" type="text/javascript" ></script>
+<script type="text/javascript" src="lib/jquery.jcarousel.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="lib/jquery.jcarousel.css" />
+<link rel="stylesheet" type="text/css" href="skins/tango/skin.css" />
+<script type="text/javascript" src="js/easySlider1.5.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 7000, true);
+		
+		jQuery('#mycarousel').jcarousel({
+        vertical: true,
+        auto: 2,
+        wrap: 'last',
+        initCallback: mycarousel_initCallback
+
+    });
+	
+		$("#slider").easySlider({
+		
+		auto: true, 
+		continuous: true
+	});	
+	});
+	
+	function mycarousel_initCallback(carousel)
+{
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+
+ jQuery(document).ready(function($) {
+      $('a[rel*=facebox]').facebox({
+        loading_image : 'images/loading.gif',
+        close_image   : 'images/closelabel.gif'
+      }) 
+    })
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17421648-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<!-- InstanceEndEditable -->
+
+</head>
+<body>
+
+<div class="min-width{fondo}">
+	 
+    <div id="main">
+    
+		<div id="header">
+       		<div class="top_head-row1">
+            	<div class="izq">
+                	<p style="margin-top:5px; line-height:25px; float:left;"><img src="/images/Argentina-Flag.png" alt="argentina" style="vertical-align:middle; float:left;" /> <strong style="color:#81a60f; margin-left:15px;">Usuarios:</strong> {cantidad_user}  | <strong style="color:#81a60f;">Empleos Vigentes:</strong > {empleos_vigentes} | <strong style="color:#81a60f;">Empresas:</strong > {empresas_vigentes} </p>
+                </div>
+                
+                <div class="der">
+                <div class="redessociales">
+                    	<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true, username:"rodrigojobtime"};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4d94ec52099ec3ee"></script>
+<!-- AddThis Button END -->
+                    
+                    </div>
+                	<div  class="usuario_logeado{mostrar}">
+                	<div style="float:left; height:30px;">
+                    <p style="padding-top:10px; padding-right:15px; font-size:12px; font-weight:bold; color:#81a60f;">Hola! <span style="color:#3c3c3c">{user}</span>&nbsp;|&nbsp;<a href="/?action=logearce&amp;usuario={dni_usuario}" title="Panel de usuario">Mi Panel</a>&nbsp;|&nbsp;<a href="/?action=logout" title="Salir">Salir</a>&nbsp;|&nbsp;</p>
+                    </div>
+                </div>
+                
+
+                </div>
+            </div>
+			<div class="head-row1" >
+				<div class="col1">
+					<a href="/{usuario_logeado}" title="Jobtime"><img src="/images/logo.png" alt="Jobtime" /> </a>
+				</div>
+				<div class="col2">
+					<div class="pr-menu">
+						<ul class="links primary-links">
+							<li class="first menu-228"><a href="/{usuario_logeado}" title="Inicio" ><span class="menu-228"><span>Inicio</span></span></a></li>
+							<li class="menu-210"><a href="/quienes_somos{usuario_logeado}" title="Quienes Somos" ><span title="" class="menu-210"><span>Quienes Somos</span></span></a></li>
+							<li class="menu-210"><a href="/Servicios{usuario_logeado}" title="Servicios" ><span title="" class="menu-210"><span>Servicios</span></span></a></li>
+							<li class="menu-215"><a href="/empleos{usuario_logeado}" title="Empleos" ><span title="" class="menu-215"><span>Empleos</span></span></a></li>
+							<li class="menu-211"><a href="/clientes{usuario_logeado}" title="Empresas" ><span title="" class="menu-211"><span>Empresas</span></span></a></li>
+							<li class="menu-237"><a href="/ingresarCv{usuario_logeado}" title="Engresar CV" ><span title="" class="menu-237"><span>Ingresar CV</span></span></a></li>
+							<li class="last menu-212"><a href="/contacto{usuario_logeado}" title="Contacto" ><span title="" class="menu-212"><span>Contacto</span></span></a></li>
+						</ul>
+					</div>
+				</div>
+                
+			</div>
+            <!-- InstanceBeginEditable name="bajo_menu" -->
+           <div class="header_text">
+    <div class="div">
+      <div class="left1">
+        <h1><span>Buscador de Empleos</span></h1>
+        <form action="/buscar_empleo" method="post" class="user-login-form" style="width:515px;">
+											<div class="filtro">
+											  <div class="form-item-home" >
+												<p  class="label_buscador_uno">Palabras clave del Empleo: </p>
+												    <p  class="label_buscador_dos"><input type="text" maxlength="60" name="edit-name" id="edit-name2" size="15" value="" class="buscador" /></p>
+											  </div>
+												<div class="form-item-home" >
+												  <p  class="label_buscador_uno">Puesto de Trabajo: </p>
+													 <p  class="label_buscador_dos"><select id="areas" name="areas"  class="opciones" >
+                                                        <option value="" selected="selected">Seleccioná uno</option>
+                                                         <!-- BEGIN areas -->
+                                                        <option value="{num_area}" {seleccionado} >{area}</option>
+                                                      <!-- END areas -->
+                                                  </select></p>
+												</div>
+												<div class="form-item-home" >
+												  <p  class="label_buscador_uno">Ubicacion: </p>
+													<p class="label_buscador_dos" style="width:147px;"><select id="provincia" name="provincia" size="1"  class="opciones" >
+                                                          <option value="" selected="selected">Seleccioná uno</option>
+                                               
+                                                          <!-- BEGIN provincias -->
+                                                            <option value="{num_provincia}" {seleccionado} >{provincia}</option>
+                                                          <!-- END provincias -->
+                                                        </select></p>
+												</div>
+												<div style="float:left; width:130px; text-align:center;">
+                                                <input type="submit" name="op"  value="" class="form-submit_buscador" style=" margin-left:0; margin-top:-15px;" />
+                                                </div>
+											</div>
+			</form>
+            <div style="float:right; margin-top:10px; margin-right:-35px;">
+            	<a  href="/alta_empresa"   title="Registro de empresas en jobtime"><img src="../images/registro_empresa.png"  alt="Registro de empresas en Jobtime" /></a>
+            </div>
+      </div>
+      <div class="gallery" style="z-index:-999">
+        <div id="slider"  style="z-index:-999">          
+          <ul>
+            <li>
+              <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="332" height="209" title="banner">
+                <param name="movie" value="../images/banner.swf" />
+                <param name="quality" value="high" />
+                <param name="wmode" value="opaque" />
+                <embed src="../images/banner.swf" wmode="opaque" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"  type="application/x-shockwave-flash" width="332" height="209"></embed>
+              </object>
+              
+            </li>
+          </ul>
+          </div>
+      </div>
+    </div>
+    <div class="clr"></div>
+  </div>
+            			
+          <!-- InstanceEndEditable -->
+		</div>
+        <!-- InstanceBeginEditable name="contenido" -->
+		<div id="cont" style="padding-top:0;">
+			<div class="bg-col">
+				<div class="bg-col2">
+					<div class="cont-inner bg-col3">
+						<div id="right-col">
+							<div class="ind">
+								<div class="width">
+									<div class="block block-user" id="block-user-0">
+										<div class="ingreso_usuarios">
+                                        <div class="block-top">
+											<div class="title">
+												<p>INGRESO DE USUARIOS</p>
+											</div>
+											<div class="content_user{ocultar}">
+												<form action="/?action=logearce" method="post" id="user-login-form">
+													<div class="componentes_form">
+														<div class="item_entero">
+															<p class="login_primero" >DNI: </p>
+															<p class="login_segundo"><input type="text" maxlength="60" name="usuario" size="15" value="" class="input_login"    /></p>
+														</div>
+														<div  class="item_entero">
+															<p class="login_primero">Contraseña: </p>
+															<p class="login_segundo"><input type="password" name="pass" maxlength="60" size="15" class="input_login"  /></p>
+														</div>
+                                                        <div class="error{mostrar_error}"><p>Usuario o contrase&ntilde;a erronea</p></div>
+														<div  class="item_entero">
+                                                        <input type="submit" name="op" id="edit-submit" value="" class="boton_login_home" /></div>
+														<div  class="item_entero">
+																<p class="recuperar"><a href="/ingresarCv" title="Registrarse">Registrarse</a></li>
+																 | <a href="/recuperar" rel="facebox" title="Recuperar Contraseña">Recuperar Contraseña</a></p>
+														</div>
+														<input type="hidden" name="form_build_id" id="form-2fa1dadb97a975b5a76a982aa3914866" value="form-2fa1dadb97a975b5a76a982aa3914866" />
+														<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block" />
+													</div>
+												</form>
+                                                
+											</div>
+                                            <div class="componentes_form_no_visible{ocultar_datos}">
+														<div class="item_entero">
+															<p class="login_primero" >Usuario: </p>
+															<p class="login_segundo">{user}</p>
+														</div>
+                                                        <div class="item_entero">
+															<p class="login_primero" style="width:160px;">Postulaciones Vigentes:&nbsp; </p>
+															<p class="login_segundo" style=" width:75px; color:#093; font-weight:bold;">&nbsp;{posul_vigent}</p>
+														</div>
+                                                        <div class="item_entero">
+															<p class="login_primero" style="width:160px;">Postulaciones Caducadas:&nbsp; </p>
+															<p class="login_segundo" style=" width:75px; color:#F00; font-weight:bold;">&nbsp;{posul_caduc}</p>
+														</div>
+                                                        <div  class="item_entero">
+																<p class="recuperar"><a href="/?action=logearce&amp;usuario={dni_usuario}" title="Panel de usuario">Mi Panel</a>&nbsp;|&nbsp;<a href="/?action=logout" title="Salir">Cerrar</a></p>
+														</div>
+												</div>
+                                           </div>
+										</div>
+                                        <div class="ingreso_empresas">
+                                        <div class="block-top">
+											<div class="title">
+												<p>INGRESO DE EMPRESAS</p>
+											</div>
+											<div class="content_user">
+												<form action="/empresas/index.php?action=checklogin" method="post" id="user-login-form">
+													<div class="componentes_form">
+														<div class="item_entero">
+															<p class="login_primero" >Usuario: </p>
+															<p class="login_segundo"><input type="text" maxlength="60" name="usuario" size="15" value="" class="input_login"    /></p>
+														</div>
+														<div  class="item_entero">
+															<p class="login_primero">Contraseña: </p>
+															<p class="login_segundo"><input type="password" name="pass" maxlength="60" size="15" class="input_login"  /></p>
+														</div>
+                                                        <div class="error{mostrar_error}"><p>Usuario o contrase&ntilde;a erronea</p></div>
+														<div  class="item_entero">
+                                                        <input type="submit" name="op" id="edit-submit" value="" class="boton_login_home" /></div>
+														<div  class="item_entero">
+                                                        <p class="recuperar" ><a href="/alta_empresa" title="Registrarse">Registrarse</a></p>
+														</div>
+														<input type="hidden" name="form_build_id" id="form-2fa1dadb97a975b5a76a982aa3914866" value="form-2fa1dadb97a975b5a76a982aa3914866" />
+														<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block" />
+													</div>
+												</form>
+											</div>
+                                           </div>
+										</div>
+									</div>
+                                    <div class="block block-blog" id="block-blog-1" >
+										<div class="block-top">
+											<div class="content" style="padding-top:10px; padding-bottom:10px; margin-left:5px; border:solid 1px #CCC; text-align:center;">
+												<a href="/express" title="Aviso Express" style="text-decoration:none;"><img src="../images/banner_aviso_express.gif" alt="" style="border:none;" /></a> 
+
+												
+											</div>
+										</div>
+									</div>
+                                    
+								<div style="float:left; margin-bottom:25px; width:250px;">
+                                    <h4 style="color:#3C3C3C; font-size:18px; font-weight:bold;">Siguenos en Facebook</h4>
+                              <div id="fb-root">
+</div>
+<script src="http://connect.facebook.net/es_ES/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/home.php#!/pages/wwwjobtimecomar/377613356312" width="250" show_faces="true" stream="false" header="true"></fb:like-box>
+						                                   
+                                 </div>   
+                                 <div style="float:left; margin-bottom:25px; width:250px;">
+                                    <h4 style="color:#3C3C3C; font-size:18px; font-weight:bold;">Lo mas buscado</h4>
+<p class="chico"><a href="/?action=buscar_empleo&page=1&ciudad=349&area=" title="Empleos en tandil">Empleos en tandil</a></p>
+<p class="grande"><a href="/?action=buscar_empleo&page=1&ciudad=349&area=" title="Trabajo Tandil">Trabajo Tandil</a></p>
+<p class="mediano"><a href="/" title="Buscar trabajo">Buscar trabajo</a></p>
+<p class="chico"><a href="/?action=buscar_empleo&page=1&ciudad=280&area=" title="Trabajo en olavarria">Trabajo en olavarria </a></p><p class="grande"><a href="/?action=buscar_empleo&page=1&ciudad=280&area=" title="ofertas empleos olavarria">ofertas empleos olavarria</a></p><p class="masgrande"><a href="/?action=buscar_empleo&page=1&ciudad=349&area=" title="Trabajo Tandil">tandil </a></p>
+<p class="chico"><a href="/?action=buscar_empleo&page=1&ciudad=349&area=" title="trabajar en tandil">trabajar en tandil </a></p>
+<p class="grande"><a href="/?action=buscar_empleo&page=1&ciudad=349&area=" title="Trabajo">Trabajo </a></p>
+<p class="mediano"><a href="/" title="empleo">empleo </a></p>
+<p class="grande"><a href="/buscar-empleo/IBM" title="trabajo en ibm tandil">trabajo en ibm tandil</a></p>
+<p class="grande"><a href="/buscar-empleo/" title="buscador de empeleo">buscador de empeleo </a></p><p class="chico"><a href="/buscar-empleo/WM%20Argentina" title="wma argentina">wma argentina</a></p>
+<p class="masgrande"><a href="/buscar-empleo/sistemas-y-tecnolog%C3%ADa-y-it/6" title="empleo programador">empleo programador</a></p><p class="chico"><a href="/?action=buscar_empleo&page=1&ciudad=128&area=" title="empleo en balcarce">empleo en balcarce</a></p><p class="mediano"><a href="/?action=buscar_empleo&page=1&ciudad=125&area=" title="empleos en azul">empleos en azul</a></p>
+<p class="chico"><a href="/buscar-empleo/Dokko%20Group" title="dokko group tandil">dokko group tandil</a></p><p class="grande"><a href="/buscar-empleo/Accenture" title="accenture tandil">accenture tandil</a></p>
+
+</div>
+							  <div class="block block-blog" id="block-blog-1">
+										<div class="block-top">
+											<div class="title">
+												<h4>Ellas nos eligen</h4>
+											</div>
+											<div class="content">
+												 <ul id="mycarousel" class="jcarousel-skin-tango">
+                                                 		  <!-- BEGIN logo_empresas -->
+                                                         <li><img src="../images/empresas/{logo}.jpg"  alt="{razon_social}" /></li>
+                                                         <!-- END logo_empresas -->
+                                                       
+                                                   </ul>
+
+												<div class="more-link" style="text-align:center;">
+													<a href="/?action=clientes" title="Ver todas las empresas">Ver todas las empresas</a>												</div>
+											</div>
+										</div>
+									</div>
+                                    
+							  </div>
+							</div>
+						</div>
+						<div class="node_uno" style="padding-bottom:0px;">
+							<div class="content" style="width:700px;">
+                            <div class="cabecera_listado" style="background:none; background:#749411; width:690px; height:50px; margin-bottom:15px;">
+                            	<div style="width:535px; float:left;"><h2 class="primero" style="width:100%; vertical-align:middle; text-align:left; padding-left:15px; font-size:18px; padding-top:10px; color:#FFF; line-height:33px; " ><img src="/images/fire.png" alt=""  style="float:left;" />Ofertas de trabajo Urgentes!</h2>
+                                </div>
+                                <div style="width:150px; float:left;">
+                                <div class="marcas_paginado" style="width:330px; float:left;">
+							<!--{paginacion_express}-->
+	 						</div>
+                                </div>
+                                
+                             </div>
+								<!-- BEGIN listado_ofertas_express -->
+                                {ver_home_express}
+                                <div class="ofertas" style="width:340px; border:solid 1px #CCC; margin-right:5px; margin-bottom:5px;">
+                                    <div class="logos">
+										<img src="../images/empresas/{logo_express}.jpg" alt="{logo_express}" height="100" />									</div>
+										<div class="oferta_linea" style="width:185px;">
+										<ul class="campos">
+                                            <li class="puesto" style="width:185px; padding-right:0; padding-top:10px;">
+                                                <p style="font-weight:bold; font-size:12px;">{titulo_trabajo_express}</p>
+                                                <p style="font-size:12px;">{puesto_trabajo_express}</p>
+                                                <p style="font-size:12px;"><span style="color:#81a60f; font-weight:bold;">{ciudad_express}</span> | {dispo_express}</p>
+                                            </li>
+                                        </ul>
+									</div>
+								</div></a>
+                                <!-- END listado_ofertas_express -->
+							</div>
+						</div>
+						<div class="node_uno" style="padding-bottom:0px;">
+							<div class="content" style="width:700px;">
+                            <div class="cabecera_listado" style="background:none; background:#666666; width:690px; height:50px; margin-bottom:15px;">
+                            	<div style="width:535px; float:left;"><h2 class="primero" style="width:100%; vertical-align:middle; text-align:left; padding-left:15px; font-size:18px; padding-top:15px; color:#FFF; " ><img src="/images/star_home.png" alt=""  style="float:left;" />Ofertas de trabajo destacadas!</h2>
+                                </div>
+                                <div style="width:150px; float:left;">
+                                <a href="/?action=mostrar_home_page&amp;ultimos=1" title="Ver &Uacute;ltimas Ofertas Laborales" style="background:url('../images/boton_nuevo_ultimos.jpg') no-repeat; color:#FFFFFF; font-size:12px; font-weight:bold; text-align:center; padding-top:10px; text-decoration:none; width:140px; height:46px; margin-top:4px; float:left;">&Uacute;timos Empleos</a>
+                                </div>
+                                
+                             </div>
+								<!-- BEGIN listado_ofertas -->
+                                {ver_home}
+                                <div class="ofertas" style="width:340px; border:solid 1px #CCC; margin-right:5px; margin-bottom:5px;">
+                                    <div class="logos">
+										<img src="../images/empresas/{logo}.jpg" alt="{logo}" height="100" />									</div>
+										<div class="oferta_linea" style="width:185px;">
+										<ul class="campos">
+                                            <li class="puesto" style="width:185px; padding-right:0; padding-top:10px;">
+                                                <p style="font-weight:bold; font-size:12px;">{titulo_trabajo}</p>
+                                                <p style="font-size:12px;">{puesto_trabajo}</p>
+                                                <p style="font-size:12px;"><span style="color:#81a60f; font-weight:bold;">{ciudad}</span> | {dispo}</p>
+                                            </li>
+                                        </ul>
+									</div>
+								</div></a>
+                                <!-- END listado_ofertas -->
+						 
+                               
+                                
+				  <div style=" width:100%; float:left;">
+						 <div class="marcas_paginado" style="width:330px; float:left;">
+							{paginacion}
+	 					</div>
+                        <div class="links" style="width:350px; float:left;">
+									<ul class="links inline">
+										<li style="width:140; float:left;"><a href="/?action=empleos" title="Ver mas Ofertas Laborales" style="background:url('../images/boton_nuevo.jpg') no-repeat; color:#FFFFFF; font-size:12px; font-weight:bold; text-align:center; padding-top:10px; text-decoration:none; width:140px; height:46px; float:left;">Ver mas Ofertas</a></li>
+										<li class="last node_read_more" style="margin-top:10px; padding-left:5px; width:200px; float:left;"> <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.jobtime.com.ar&amp;layout=standard&amp;show_faces=false&amp;width=200&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:200px; height:60px"></iframe>
+
+</li>
+									</ul>
+								</div>
+								</div>
+							</div>
+							<div class="links-indent">
+								
+							</div>
+							<div class="clear">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="head-row4" id="custom">
+			<div class="block block-block" id="block-block-14">
+				<div class="block-top">
+					<div class="title">
+						<h3></h3>
+					</div>
+					<div class="content">
+						<a href="/nueva_empresa" rel="facebox"><img src="../images/banner.png" class="reflected" alt="Empresas" /></a>					</div>
+				</div>
+			</div>
+	  <div class="block block-block" id="block-block-15">
+				<div class="block-top">
+					<div class="title">
+						<h3></h3>
+					</div>
+					<div class="content">
+						<a href="/blog/tips" title="Tips" target="_blank"><img  src="../images/banner2.png" class="reflected" alt="Tips"/></a>					</div>
+				</div>
+			</div>
+	  <div class="block block-block" id="block-block-16">
+				<div class="block-top">
+					<div class="title">
+						<h3></h3>
+					</div>
+					<div class="content">
+						<a href="/blog" title="Blog de JobTime" target="_blank"><img  src="../images/banner3.png" class="reflected" alt="Blog"/></a>					</div>
+				</div>
+			</div>
+	  </div>
+		
+      	<!-- InstanceEndEditable -->
+	</div>
+	<div id="footer" >
+		<div style="width:980px; margin:auto;">
+        <div class="bloques">
+         <ul >
+			<li class="titulo">USUARIOS</li>
+            <li><a href="/ingresarCv" title="Nuevo Usuario">Nuevo Usuario</a></li>
+             <li><a href="/recuperar" title="Recordar Contrase&ntilde;a">Recordar Contrase&ntilde;a</a></li>
+			<li><a href="/empleos" title="Ofertas de trabajo">Ofertas de trabajo</a></li>
+            <li><a href="/ayuda.pdf" title="Ayuda" target="_blank">Ayuda</a></li>
+            </ul>
+        </div>
+        <div class="bloques">
+         <ul >
+         <li class="titulo">EMPRESAS</li>
+			<li><a href="/alta_empresa" title="Registrar Empresa" >Registrar Empresa</a></li>
+			<li><a href="/Servicios" title="Servicios">Servicios</a></li>
+            <li><a href="/clientes" title="Nuestros Clientes">Nuestros Clientes</a></li>
+            </ul>
+        </div>
+        <div class="bloques">
+         <ul >
+			<li class="titulo">JOBTIME</li>
+            <li><a href="/quienes_somos" title="Quienes Somos">Quienes Somos</a></li>
+			<li><a href="/contacto" title="Contacto">Contacto</a></li>
+            <li><a href="/paginas_amigas" title="Páginas Amigas">Páginas Amigas</a></li>
+            <li><a href="/mapa" title="Mapa del Sito">Mapa del Sito</a></li>
+            </ul>
+        </div>
+        <div class="ultimo_bloques">
+         <form action="/?action=newsletter" method="post" onsubmit="return validacion_news(this)" name="formulario">
+         <ul >
+			
+            <li class="titulo">MANTENTE INFORMADO</li>
+            <li class="leyenda">Recibí las últimas ofertas de trabajo en tu Mail</li>
+			<li><input type="text" name="mail_news" id="mail_news" value="TU E-MAIL" /><input type="submit" value="ENVIAR" class="boton_news" /></li>
+            </ul>
+         </form>   
+        </div>
+        </div>
+ 	</div>
+    <div class="pie_terminos">
+    <div class="izquierda">
+    <p>Copyright @ 2010 por JobTime. Todos los derechos reservados.  - <a href="/terminios" title="Terminos y condiciones">Terminos y condiciones. </a></p>
+    </div>
+    <div class="derecha">
+    <ul class="menu_pie_der">
+       		
+			 <li><a href="http://www.linkedin.com/companies/jobtime-empleos" title="Encontra Jobtime linkedin" target="_blank"><img src="/images/footer_link4.gif" alt="Encontranos en Linkedin" /></a></li>
+            <li><a href="http://www.facebook.com/jobtime" title="Encontra Jobtime Facebook" target="_blank"><img src="/images/footer_link2.gif" alt="Encontranos en Facebook" /></a></li>
+			<li><a href="http://www.twitter.com/empleosjobtime" title="Encontra Jobtime en Twitter" target="_blank" ><img src="/images/footer_link1.gif" alt="Encontranos en Twitter" /></a></li>
+		</ul>
+        </div>
+    </div>
+</div>
+<!--Start Kampyle Feedback Form Button-->
+
+<div id='k_close_button' class='k_float kc_top_sl kc_right'></div><div><a href='http://www.kampyle.com/feedback_form/ff-feedback-form.php?site_code=4685003&amp;lang=es&amp;form_id=54371'  target='kampyleWindow' id='kampylink' class='k_float k_top k_right' onclick="javascript:k_button.open_ff('site_code=4685003&amp;lang=es&amp;form_id=54371');return false;"><img src="http://cf.kampyle.com/buttons/es/green/es-green-band-up-right.gif" alt="Feedback Form" border="0"/></a></div>
+
+<script src="http://cf.kampyle.com/k_button.js" type="text/javascript"></script>
+<script src="http://cf.kampyle.com/k_push.js" type="text/javascript"></script>
+<!--End Kampyle Feedback Form Button-->
+</body>
+
+<!-- InstanceEnd --></html>

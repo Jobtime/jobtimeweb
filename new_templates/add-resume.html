@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="es"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+    ================================================== -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>JobTime - Ofertas de empleos y trabajo en Tandil, Azul, Olavarria y la zona - Ingresar</title>
+	<meta http-equiv="Content-Language" content="es" />
+	<meta name="title" content="Portal de búsqueda de empleos y trabajo en Tandil, Azul, Olavarria y la Zona" />
+	<meta name="Description" content="El portal de búsqueda y selección de personal líder a nivel zonal. Ofrecimientos de trabajos y empleos en Tandil, Azul, Olavarria y la zona. Publicación gratuita de ofertas de trabajo y empleo, al igual que carga de currículos. Banco de Cv´s en Tandil, Azul, Olavarria, Buenos Aires y toda Argentina." />
+	<meta name="keywords" content="Empleos Tandil, Consultoras Tandil, Selección de personal Tandil, Búsqueda de empleos, Ofertas laborales Tandil, Se necesita en Tandil, Empleos provincia de Buenos Aires, Empleos zona Tandil, Laboral Tandil, Empleos en tandil, Jobtime, Jobtime en tandil, jobtime consultora, jobtime consultora empresarial, consultora empresarial, empleo tandil, trabajo en tandil, jobtime trabajo, trabajo tandil, Busqueda de trabajo, Ofertas de Trabajo."/>
+	<!-- Mobile Specific Metas
+    ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+	<link rel="stylesheet" href="csss/style.css">
+	<link rel="stylesheet" href="csss/colors/green.css" id="colors">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	{gtm}
+</head>
+
+<body>
+<div id="wrapper">
+
+
+	<!-- Header
+    ================================================== -->
+	<header class="sticky-header">
+		<!-- Navigation -->
+		<div id="mobile-navigation">
+			<a href="#menu" class="menu-trigger"><i class="fa fa-reorder"></i> <img class="logo_mobile" src="images/logo.png" alt="Jobtime" /></a>
+		</div>
+		<div class="container">
+			<div class="sixteen columns">
+
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="/"><img src="images/logo.png" alt="Work Scout" /></a></h1>
+				</div>
+
+				<!-- Menu -->
+				<nav id="navigation" class="menu">
+					<ul id="responsive">
+						<li class="inicio"><a href="/">Inicio</a></li>
+
+
+						<li><a href="/quienes_somos{usuario_logeado}">Quienes Somos</a></li>
+
+						<li><a href="/servicios{usuario_logeado}">servicios</a></li>
+
+						<li><a href="/empleos{usuario_logeado}">Empleos</a></li>
+
+						<li><a href="/clientes{usuario_logeado}">Nuestras empresas</a></li>
+
+						<li><a href="{url_logeado}"><i class="fa fa-user" {ocultar_munieco}></i> {inicio_login}</a></li>
+
+						<li {ocultar_user_loguiado}><a href="/alta_empresa"><i class="fa fa-lock"></i> Soy Empresa</a></li>
+
+						<li class="ocultar_usuario_sin_logear" {mostrar_user_loguiado}><a href="/logout"><i class="fa fa-sign-out"></i> Salir</a></li>
+
+					</ul>
+
+
+				</nav>
+
+
+
+			</div>
+		</div>
+	</header>
+	<div class="clearfix"></div>
+
+
+<!-- Titlebar
+================================================== -->
+<div id="titlebar" class="single submit-page">
+	<div class="container">
+
+		<div class="sixteen columns">
+
+				<ul class="tres-columns">
+					<li><img src="/images/paso-1_act.png" alt="Datos Personales"  /></li>
+					<li><img src="/images/paso-2.png" alt="Estudios"  /></li>
+					<li><img src="/images/paso-3.png" alt="Experiencia Laboral"  /></li>
+				</ul>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- Content
+================================================== -->
+<div class="container">
+	
+	<!-- Submit Page -->
+	<div class="fifeteen columns">
+		<form id="formID" class="formular" method="post" action="/?action=registro_paso1" enctype="multipart/form-data" >
+		<div class="submit-page" style="padding:0px;">
+
+			<div class="seven columns">
+				<!-- Email -->
+				<div class="form">
+					<h5>Nombres</h5>
+					<input class="search-field" type="text" placeholder="Nombres" maxlength="30" name="Fnombre" value="{nombres}" type="text" id="Fnombre" value=""/>
+				</div>
+				<div class="form seven columns" style="margin-left: 0px;">
+
+					<div class="two columns" style="margin-left: 0px;">
+						<h5>Tipo</h5>
+					<!-- Select -->
+					<select data-placeholder="Tipo" name="FdniTipo" id="FdniTipo"  class="chosen-select-no-single">
+						<!-- BEGIN tipo_documento -->
+						<option value="{num_tipo}" {seleccionado} >{documento}</option>
+						<!-- END tipo_documento -->
+					</select>
+					</div>
+					<div class="five columns" style="margin-left: 0px;">
+						<h5>Número de documento</h5>
+						<input class="search-field" type="text" placeholder="Número de documento" maxlength="30" name="Fnumerodni" value="{dni}" id="Fnumerodni"  type="text"  disabled="disabled"/>
+					</div>
+				</div>
+
+				<!-- Email -->
+				<div class="form">
+					<h5>Fecha de Nacimiento <span> : (dd-mm-aaaa)</span></h5>
+					<input name="day" type="text" style="width: 60px; display: inline-block" maxlength="2" id="day" value="{dia}" class="search-field" />&nbsp;<span style="display: inline-block; margin: 10px;"> - </span>&nbsp;<input name="month" value="{mes}"  type="text" style="width: 60px; display: inline-block" maxlength="2"  id="mes" class="search-field" />&nbsp;<span style="display: inline-block; margin: 10px;"> - </span>&nbsp;<input name="year" value="{anio}" type="text" style="width: 100px; display: inline-block; " maxlength="4" class="search-field"  id="year" />
+				</div>
+
+				<!-- Email -->
+				<div class="form">
+					<h5>Email</h5>
+					<input class="search-field" type="text" placeholder="mail@example.com" maxlength="30" id="Fnombre3" name="Fnombre3" value="{email}" />
+				</div>
+
+				<!-- Title -->
+				<div class="form">
+					<h5>Hijos</h5>
+					<input class="search-field" type="text" maxlength="10" name="Fhijos" value="{hijos}" id="Fhijos"/>
+				</div>
+
+				<!-- Location -->
+				<div class="form">
+					<h5>País</h5>
+					<!-- Select -->
+					<select data-placeholder="País" id="country" name="country"  size="1"  class="chosen-select-no-single">
+						<!-- BEGIN paises -->
+						<option value="{num_pais}" {seleccionado} >{pais}</option>
+						<!-- END paises -->
+					</select>
+				</div>
+
+				<div class="form">
+					<h5>Ciudad</h5>
+					<!-- Select -->
+					<select data-placeholder="Ciudad" id="partido" name="location2"  class="chosen-select-no-single">
+						<option value="" selected="selected">Seleccioná uno</option>
+						<!-- BEGIN ciudades -->
+						<option value="{num_ciudad}" {seleccionado} >{ciudad}</option>
+						<!-- END ciudades -->
+					</select>
+				</div>
+
+				<div class="form">
+					<h5>Movilidad propia</h5>
+					<!-- Select -->
+					<select data-placeholder="Movilidad propia" name="Fmovilidad" id="Fmovilidad" size="1"  class="chosen-select-no-single">
+						<option selected="selected" value="1">Si</option>
+						<option value="2">No</option>
+					</select>
+				</div>
+
+				<div class="form">
+					<h5>Remuneración pretendida</h5>
+					<input class="search-field" type="text" maxlength="30" name="Fremuneracion" value="{remuneracion}" id="Fremuneracion"/>
+				</div>
+			</div>
+			<div class="seven columns">
+				<div class="form">
+					<h5>Apellidos</h5>
+					<input class="search-field" type="text" placeholder="Apellidos" maxlength="30" name="Fapellido" value="{apellidos}" id="Fapellido"/>
+				</div>
+				<!-- Logo -->
+				<div class="form">
+					<h5>Foto <span>(Opcional)</span></h5>
+					<label class="upload-btn">
+						<input type="file" name="Ffoto" id="Ftofo" />
+						<i class="fa fa-upload"></i> Buscar
+					</label>
+					<span class="fake-input">No seleciono ninguna foto</span>
+				</div>
+
+				<div class="form">
+					<h5>Teléfono</h5>
+					<input class="search-field" type="text" placeholder="Teléfono" maxlength="30" name="Fnombre4" value="{telefono}" id="Fnombre4"/>
+				</div>
+
+				<!-- Email -->
+				<div class="form">
+					<h5>Sexo</h5>
+					<!-- Select -->
+					<select data-placeholder="Tipo" name="Fsexo" id="Fsexo"  class="chosen-select-no-single">
+						<!-- BEGIN block_sexo -->
+						<option  value="{numero_sexo}" {seleccionado}>{nombre_sexo}</option>
+						<!-- END block_sexo -->
+					</select>
+				</div>
+
+				<!-- Description -->
+				<div class="form">
+					<h5>Estado Civíl</h5>
+					<!-- Select -->
+					<select data-placeholder="Estado Civíl" id="Festadocivil" name="Festadocivil"  class="chosen-select-no-single">
+						<!-- BEGIN block_estado_civil -->
+						<option value="{num_estado_civil}" {seleccionado} >{estado_civil}</option>
+						<!-- END block_estado_civil -->
+					</select>
+				</div>
+
+				<!-- Add URLs -->
+				<div class="form">
+					<h5>Provincia</h5>
+					<!-- Select -->
+					<select data-placeholder="Provincia" id="location1" name="location1" size="1"  class="chosen-select-no-single">
+						<!-- BEGIN provincias -->
+						<option value="{num_provincia}" {seleccionado} >{provincia}</option>
+						<!-- END provincias -->
+					</select>
+				</div>
+
+				<div class="form">
+					<h5>Domicilio</h5>
+					<!-- Select -->
+					<input class="search-field" type="text" placeholder="Domicilio" maxlength="30" name="Fnombre2" id="Fnombre2" value="{domicilio}"/>
+				</div>
+
+				<div class="form">
+					<h5>Disponibilidad horaria.</h5>
+					<!-- Select -->
+					<select data-placeholder="Disponibilidad" name="Ftraslado" id="Ftraslado" size="1"  class="chosen-select-no-single">
+						<option selected="selected" value="1">Si</option>
+						<option value="2">No</option>
+					</select>
+				</div>
+
+				<div class="form">
+					<div class="margin-top-5"></div>
+					<br>
+					<input type="hidden" value="" name="accion" id="accion" />
+					<a href="javascript:ejecutar_accion('guardar_salir');" class="button big margin-top-5" title="Guardar y Salir">Guardar y Salir <i class="fa fa-arrow-circle-right"></i></a>
+					<span style="margin-left: 10px;"></span>
+					<a href="javascript:ejecutar_accion('guardar_seguir');" class="button big margin-top-5" title="Siguiente paso">Continuar <i class="fa fa-arrow-circle-right"></i></a>
+				</div>
+
+
+
+			</div>
+		</div>
+		</form>
+	</div>
+
+</div>
+
+
+<!-- Footer
+================================================== -->
+<div class="margin-top-60"></div>
+	<div id="footer">
+		<!-- Main -->
+		<div class="container">
+
+			<div class="seven columns">
+				<h4>MANTENTE INFORMADO</h4>
+				<p>Recibí las últimas ofertas de trabajo en tu mail, segun tus preferencias.</p>
+				<a href="#" class="button">Comenzar</a>
+			</div>
+
+			<div class="three columns">
+				<h4>USUARIOS</h4>
+				<ul class="footer-links">
+					<li><a href="/ingresarCv" title="Nuevo Usuario">Nuevo Usuario</a></li>
+					<li><a href="/recuperar" title="Recordar Contrase&ntilde;a">Recordar Contrase&ntilde;a</a></li>
+					<li><a href="/empleos" title="Ofertas de trabajo">Ofertas de trabajo</a></li>
+					<li><a href="/ayuda.pdf" title="Ayuda" target="_blank">Ayuda</a></li>
+				</ul>
+			</div>
+
+			<div class="three columns">
+				<h4>EMPRESAS</h4>
+				<ul class="footer-links">
+					<li><a href="/alta_empresa" title="Registrar Empresa" >Registrar Empresa</a></li>
+					<li><a href="/servicios" title="servicios">servicios</a></li>
+					<li><a href="/clientes" title="Nuestros Clientes">Nuestros Clientes</a></li>
+				</ul>
+			</div>
+
+			<div class="three columns">
+				<h4>JOBTIME</h4>
+				<ul class="footer-links">
+					<li><a href="/quienes_somos" title="Quienes Somos">Quienes Somos</a></li>
+					<li><a href="/contacto" title="Contacto">Contacto</a></li>
+					<li><a href="/paginas_amigas" title="Páginas Amigas">Páginas Amigas</a></li>
+					<li><a href="/mapa" title="Mapa del Sito">Mapa del Sito</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- Bottom -->
+		<div class="container">
+			<div class="footer-bottom">
+				<div class="sixteen columns">
+					<h4>SIGUENOS</h4>
+					<ul class="social-icons">
+						<li><a class="facebook" href="http://www.facebook.com/jobtime"><i class="icon-facebook"></i></a></li>
+						<li><a class="twitter" href="http://www.twitter.com/empleosjobtime"><i class="icon-twitter"></i></a></li>
+						<li><a class="linkedin" href="http://www.linkedin.com/companies/jobtime-empleos"><i class="icon-linkedin"></i></a></li>
+					</ul>
+					<div class="copyrights">Copyright @ 2010 por JobTime. Todos los derechos reservados</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Back To Top Button -->
+	<div id="backtotop"><a href="#"></a></div>
+
+</div>
+<!-- Wrapper / End -->
+<!-- Wrapper / End -->
+
+
+<!-- Scripts
+================================================== -->
+<script src="scripts/jquery-2.1.3.min.js"></script>
+<script src="scripts/custom.js"></script>
+<script src="scripts/jquery.superfish.js"></script>
+<script src="scripts/jquery.themepunch.tools.min.js"></script>
+<script src="scripts/jquery.themepunch.revolution.min.js"></script>
+<script src="scripts/jquery.themepunch.showbizpro.min.js"></script>
+<script src="scripts/jquery.flexslider-min.js"></script>
+<script src="scripts/chosen.jquery.min.js"></script>
+<script src="scripts/jquery.magnific-popup.min.js"></script>
+<script src="scripts/waypoints.min.js"></script>
+<script src="scripts/jquery.counterup.min.js"></script>
+<script src="scripts/jquery.jpanelmenu.js"></script>
+<script src="scripts/stacktable.js"></script>
+<script src="scripts/headroom.min.js"></script>
+
+
+<script>
+	function ejecutar_accion(tipo)
+	{
+		document.getElementById('accion').value = tipo;
+		document.getElementById("formID").submit();
+
+
+	}
+</script>
+
+</body>
+</html>
+<!-- Localized -->

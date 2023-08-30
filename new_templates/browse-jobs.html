@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="es"> <!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>JobTime - Ofertas de empleos y trabajo en Tandil, Azul, Olavarria y la zona - Ingresar</title>
+<meta http-equiv="Content-Language" content="es" />
+<meta name="title" content="Portal de búsqueda de empleos y trabajo en Tandil, Azul, Olavarria y la Zona" />
+<meta name="Description" content="El portal de búsqueda y selección de personal líder a nivel zonal. Ofrecimientos de trabajos y empleos en Tandil, Azul, Olavarria y la zona. Publicación gratuita de ofertas de trabajo y empleo, al igual que carga de currículos. Banco de Cv´s en Tandil, Azul, Olavarria, Buenos Aires y toda Argentina." />
+<meta name="keywords" content="Empleos Tandil, Consultoras Tandil, Selección de personal Tandil, Búsqueda de empleos, Ofertas laborales Tandil, Se necesita en Tandil, Empleos provincia de Buenos Aires, Empleos zona Tandil, Laboral Tandil, Empleos en tandil, Jobtime, Jobtime en tandil, jobtime consultora, jobtime consultora empresarial, consultora empresarial, empleo tandil, trabajo en tandil, jobtime trabajo, trabajo tandil, Busqueda de trabajo, Ofertas de Trabajo."/>
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9889141407917846"
+     crossorigin="anonymous"></script>
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="/csss/style.css">
+<link rel="stylesheet" href="/csss/colors/green.css" id="colors">
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+{gtm}
+</head>
+
+<body>
+<div id="wrapper">
+
+
+<!-- Header
+================================================== -->
+<header class="sticky-header">
+	<!-- Navigation -->
+	<div id="mobile-navigation">
+		<a href="#menu" class="menu-trigger"><i class="fa fa-reorder"></i> <img class="logo_mobile" src="/images/logo.png" alt="Jobtime" /></a>
+	</div>
+<div class="container">
+	<div class="sixteen columns">
+
+		<!-- Logo -->
+		<div id="logo">
+			<h1><a href="/"><img src="/images/logo.png" alt="Jobtime" /></a></h1>
+		</div>
+
+		<!-- Menu -->
+		<nav id="navigation" class="menu">
+			<ul id="responsive">
+				<li class="inicio"><a href="/">Inicio</a></li>
+
+
+				<li><a href="/quienes_somos{usuario_logeado}">Quienes Somos</a></li>
+
+				<li><a href="/servicios{usuario_logeado}">servicios</a></li>
+
+				<li><a href="/empleos{usuario_logeado}">Empleos</a></li>
+
+				<li><a href="/clientes{usuario_logeado}">Nuestras empresas</a></li>
+
+				<li><a href="{url_logeado}"><i class="fa fa-user" {ocultar_munieco}></i> {inicio_login}</a></li>
+
+				<li {ocultar_user_loguiado}><a href="/alta_empresa"><i class="fa fa-lock"></i> Soy Empresa</a></li>
+
+				<li class="ocultar_usuario_sin_logear" {mostrar_user_loguiado}><a href="/logout"><i class="fa fa-sign-out"></i> Salir</a></li>
+
+			</ul>
+
+
+		</nav>
+
+
+
+	</div>
+</div>
+</header>
+<div class="clearfix"></div>
+
+
+<!-- Titlebar
+================================================== -->
+
+
+<div id="banner" style="background-image: url(&quot;/images/banner-home-01.jpg&quot;); background-attachment: fixed; background-size: 1440px 957.6px; background-position: 50% -374.619px;" class="parallax background" data-img-width="2000" data-img-height="1330" data-diff="400">
+	<div class="container">
+		<div class="sixteen columns">
+			
+			<div class="search-container" style="transform: translateY(-32px); padding: 80px; padding-bottom: 10px; padding-left: 0px;">
+
+				<!-- Form -->
+				<h2>Buscador de trabajo avanzado:</h2>
+				<form name="busqueda" method="post" action="/buscar-empleo" method="get" class="list-search">
+				<button><i class="fa fa-search"></i></button>
+				<input type="text" placeholder="Título de trabajo, palabras claves o empresa" name="edit-name" value="{busqueda}"/>
+				</div>
+					<div class="container" style="padding-bottom: 80px;">
+
+				<!-- Sort by -->
+		
+
+		<!-- Location -->
+						<div class="eight columns" style="margin-left: 0px; margin-top: 10px;">
+
+				<select id="provincia" name="provincia" size="1" 
+				<select data-placeholder="Choose Category" class="miles chosen-select-no-single">
+                  <option value="" selected="selected">Provincia</option>
+                  <!-- BEGIN provincias -->
+                  	<option value="{num_provincia}" {seleccionado} >{provincia}</option>
+                  <!-- END provincias -->
+                </select>
+			</div>
+				<div class="eight columns" style=" margin-top: 10px;">
+
+				<select id="ciudad" name="ciudad" class="miles chosen-select-no-single" >
+                    <option value="" selected="selected">Ciudad</option>
+            	     <!-- BEGIN ciudades -->
+                  	<option value="{num_ciudad}" {seleccionado} >{ciudad}</option>
+                  <!-- END ciudades -->
+                  </select>
+			</div>
+			<div class="eight columns" style="margin-left: 0px; margin-top: 15px;">
+				<select data-placeholder="Choose Category" class="miles chosen-select-no-single">
+					<option selected="selected" value="recent">Esta semana</option>
+					<option value="oldest">Hace una semana</option>
+					<option value="expiry">Hace dos semanas</option>
+					<option value="all">Todos</option>
+
+				</select>
+			</div>
+			<div class="eight columns" style=" margin-top: 15px;">
+
+				<button class="button">Buscar</button>
+			</div>
+			</form>
+						</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- Content
+================================================== -->
+<div class="container">
+	<!-- Recent Jobs -->
+	<div class="eleven columns">
+	<div class="padding-right">
+		
+		
+
+		<ul class="job-list full">
+		<!-- BEGIN listado_ofertas -->
+			<li><a {ver} >
+				<img src="/images/empresas/{logo}.jpg" alt="{empresa}" />
+				<div class="job-list-content">
+					<h4>{titulo_trabajo}  <span class="{color_jornada}">{dispo}</span></h4>
+					<div class="job-icons">
+						<span><i class="fa fa-briefcase"></i> {puesto_trabajo}  </span>
+						<span><i class="fa fa-map-marker"></i> {ciudad}</span>
+						<span><i class="fa fa-calendar"></i> {fecha}</span>
+					</div>
+					<p>{detalle}</p>
+				</div>
+				</a>
+				<div class="clearfix"></div>
+			</li>
+		<!-- END listado_ofertas -->
+
+		</ul>
+		<div class="clearfix"></div>
+
+		<div class="pagination-container">
+			<nav class="pagination">
+				
+				<ul>
+				{paginacion}
+					
+				</ul>
+			</nav>
+
+			<nav class="pagination-next-prev">
+				<ul>
+					<li><a href="#" class="prev">Anterior</a></li>
+					<li><a href="#" class="next">Siguiente</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</div>
+	</div>
+
+
+	<!-- Widgets -->
+	<div class="five columns">
+
+		
+
+		<!-- Job Type -->
+		<div class="widget">
+			<h4>Categorias</h4>
+
+			<ul class="checkboxes">
+				<li>
+					<input id="check-1" type="checkbox" name="check" value="check-1" checked>
+					<label for="check-1">Todos</label>
+				</li>
+				<!-- BEGIN listado_categorias -->
+                <li><a href="/buscar-empleo/{nombre_categoria_url}/{numero_categoria}" title="{nombre_categoria}" style="color:#666"><label>{nombre_categoria} ({cantidad})</label></a></li>
+                 <!-- END listado_categorias -->
+			</ul>
+
+		</div>
+		<div class="widget">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Listado -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-9889141407917846"
+			 data-ad-slot="6462201809"
+			 data-ad-format="auto"
+			 data-full-width-responsive="true"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		</div>
+
+	</div>
+	<!-- Widgets / End -->
+
+
+</div>
+
+
+<!-- Footer
+================================================== -->
+<div class="margin-top-0"></div>
+
+<div id="footer">
+	<!-- Main -->
+	<div class="container">
+
+		<div class="seven columns">
+			<h4>MANTENTE INFORMADO</h4>
+			<p>Recibí las últimas ofertas de trabajo en tu mail, segun tus preferencias.</p>
+			<a href="#" class="button">Comenzar</a>
+		</div>
+
+		<div class="three columns">
+			<h4>USUARIOS</h4>
+			<ul class="footer-links">
+				<li><a href="/ingresarCv" title="Nuevo Usuario">Nuevo Usuario</a></li>
+				<li><a href="/recuperar" title="Recordar Contrase&ntilde;a">Recordar Contrase&ntilde;a</a></li>
+				<li><a href="/empleos" title="Ofertas de trabajo">Ofertas de trabajo</a></li>
+				<li><a href="/ayuda.pdf" title="Ayuda" target="_blank">Ayuda</a></li>
+			</ul>
+		</div>
+
+		<div class="three columns">
+			<h4>EMPRESAS</h4>
+			<ul class="footer-links">
+				<li><a href="/alta_empresa" title="Registrar Empresa" >Registrar Empresa</a></li>
+				<li><a href="/servicios" title="servicios">servicios</a></li>
+				<li><a href="/clientes" title="Nuestros Clientes">Nuestros Clientes</a></li>
+			</ul>
+		</div>
+
+		<div class="three columns">
+			<h4>JOBTIME</h4>
+			<ul class="footer-links">
+				<li><a href="/quienes_somos" title="Quienes Somos">Quienes Somos</a></li>
+				<li><a href="/contacto" title="Contacto">Contacto</a></li>
+				<li><a href="/paginas_amigas" title="Páginas Amigas">Páginas Amigas</a></li>
+				<li><a href="/mapa" title="Mapa del Sito">Mapa del Sito</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Bottom -->
+	<div class="container">
+		<div class="footer-bottom">
+			<div class="sixteen columns">
+				<h4>SIGUENOS</h4>
+				<ul class="social-icons">
+					<li><a class="facebook" href="http://www.facebook.com/jobtime"><i class="icon-facebook"></i></a></li>
+					<li><a class="twitter" href="http://www.twitter.com/empleosjobtime"><i class="icon-twitter"></i></a></li>
+					<li><a class="linkedin" href="http://www.linkedin.com/companies/jobtime-empleos"><i class="icon-linkedin"></i></a></li>
+				</ul>
+				<div class="copyrights">Copyright @ 2010 por JobTime. Todos los derechos reservados</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- Back To Top Button -->
+<div id="backtotop"><a href="#"></a></div>
+
+</div>
+<!-- Wrapper / End -->
+
+
+<!-- Scripts
+================================================== -->
+<script src="/scripts/jquery-2.1.3.min.js"></script>
+<script src="/scripts/custom.js"></script>
+<script src="/scripts/jquery.superfish.js"></script>
+<script src="/scripts/jquery.themepunch.tools.min.js"></script>
+<script src="/scripts/jquery.themepunch.revolution.min.js"></script>
+<script src="/scripts/jquery.themepunch.showbizpro.min.js"></script>
+<script src="/scripts/jquery.flexslider-min.js"></script>
+<script src="/scripts/chosen.jquery.min.js"></script>
+<script src="/scripts/jquery.magnific-popup.min.js"></script>
+<script src="/scripts/waypoints.min.js"></script>
+<script src="/scripts/jquery.counterup.min.js"></script>
+<script src="/scripts/jquery.jpanelmenu.js"></script>
+<script src="/scripts/stacktable.js"></script>
+<script src="/scripts/headroom.min.js"></script>
+
+
+</body>
+</html>
+<!-- Localized -->

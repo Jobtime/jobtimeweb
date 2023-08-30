@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="es"> <!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>JobTime - Ofertas de empleos y trabajo en Tandil, Azul, Olavarria y la zona - Ingresar</title>
+<meta http-equiv="Content-Language" content="es" />
+<meta name="title" content="Portal de búsqueda de empleos y trabajo en Tandil, Azul, Olavarria y la Zona" />
+<meta name="Description" content="El portal de búsqueda y selección de personal líder a nivel zonal. Ofrecimientos de trabajos y empleos en Tandil, Azul, Olavarria y la zona. Publicación gratuita de ofertas de trabajo y empleo, al igual que carga de currículos. Banco de Cv´s en Tandil, Azul, Olavarria, Buenos Aires y toda Argentina." />
+<meta name="keywords" content="Empleos Tandil, Consultoras Tandil, Selección de personal Tandil, Búsqueda de empleos, Ofertas laborales Tandil, Se necesita en Tandil, Empleos provincia de Buenos Aires, Empleos zona Tandil, Laboral Tandil, Empleos en tandil, Jobtime, Jobtime en tandil, jobtime consultora, jobtime consultora empresarial, consultora empresarial, empleo tandil, trabajo en tandil, jobtime trabajo, trabajo tandil, Busqueda de trabajo, Ofertas de Trabajo."/>
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="csss/style.css">
+<link rel="stylesheet" href="csss/colors/green.css" id="colors">
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+{gtm}
+</head>
+
+<body>
+<div id="wrapper">
+
+
+<!-- Header
+================================================== -->
+<header class="sticky-header">
+	<!-- Navigation -->
+	<div id="mobile-navigation">
+		<a href="#menu" class="menu-trigger"><i class="fa fa-reorder"></i> <img class="logo_mobile" src="images/logo.png" alt="Jobtime" /></a>
+	</div>
+<div class="container">
+	<div class="sixteen columns">
+
+		<!-- Logo -->
+		<div id="logo">
+			<h1><a href="/"><img src="images/logo.png" alt="Jobtime" /></a></h1>
+		</div>
+
+		<!-- Menu -->
+		<nav id="navigation" class="menu">
+			<ul id="responsive">
+				<li class="inicio"><a href="/">Inicio</a></li>
+
+
+				<li><a href="/quienes_somos{usuario_logeado}">Quienes Somos</a></li>
+
+				<li><a href="/servicios{usuario_logeado}">servicios</a></li>
+
+				<li><a href="/empleos{usuario_logeado}">Empleos</a></li>
+
+				<li><a href="/clientes{usuario_logeado}">Nuestras empresas</a></li>
+
+				<li><a href="{url_logeado}"><i class="fa fa-user" {ocultar_munieco}></i> {inicio_login}</a></li>
+
+				<li {ocultar_user_loguiado}><a href="/alta_empresa"><i class="fa fa-lock"></i> Soy Empresa</a></li>
+
+				<li class="ocultar_usuario_sin_logear" {mostrar_user_loguiado}><a href="/logout"><i class="fa fa-sign-out"></i> Salir</a></li>
+
+			</ul>
+
+
+		</nav>
+
+
+
+	</div>
+</div>
+</header>
+<div class="clearfix"></div>
+
+
+<!-- Titlebar
+================================================== -->
+<div id="titlebar" class="resume">
+	<div class="container">
+		<div class="ten columns">
+			<div class="resume-titlebar">
+				<img src="/usuarios/{foto_usuario}/avatar.jpg" alt="Foto de {usuario}" />
+				<div class="resumes-list-content">
+					<h4>{apellido}, {nombre} <span>{titulo_estudio}</span></h4>
+					<span class="icons"><i class="fa fa-map-marker"></i> {localidad}, {provincia}</span>
+					<span class="icons"><a href="#"><i class="fa fa-envelope"></i> <span class="__cf_email__">{email}</span></a></span>
+					<span class="icons"><i class="fa fa-linkedin"></i> Linkedin: <span style="color:#0084b4;">{twitter_user}</span><a href="/?action=borrar_twit&dni={dni_usuario}"  style=" width:12px; float:right; display: {boton_twitter_user_del} " title="Borrar Linkedin"><img src="../images/delete_social.jpg" alt="" style="width: auto; height: auto;" /></a></span>
+					<span class="icons"><i class="fa fa-facebook"></i> Facebook: <span style="color:#0084b4;">{facebook_user}</span> <a href="/?action=borrar_face&dni={dni_usuario}"  style=" width:12px; float:right; display: {boton_facebook_user_del} " title="Agregar Facebook"><img src="../images/delete_social.jpg" alt="borrar" style="width: auto; height: auto;" /></a></span>
+
+					<div class="skills">
+						<!-- BEGIN habilidades -->
+						<span>{habilidad}</span>
+						<!-- END habilidades -->
+					</div>
+					<div class="clearfix"></div>
+					{puedo_adjuntar}
+					{mensaje_pass}
+				</div>
+			</div>
+		</div>
+
+		<div id="small-dialog" class="zoom-anim-dialog mfp-hide apply-popup">
+			<div class="small-dialog-headline">
+				<h2><i class="fa fa-facebook"></i> Agregar facebook</h2>
+			</div>
+
+			<div class="small-dialog-content">
+				<form action="/?action=add_face" method="post" enctype="multipart/form-data" >
+					<input type="text" placeholder="Perfil de facebook" name="face" value=""/>
+
+					<div class="margin-top-20"></div>
+					<div class="divider"></div>
+
+					<input class="send" type="submit" name="enviar" value="Agregar" />
+				</form>
+			</div>
+		</div>
+
+		<div id="small-dialog-linkedin" class="zoom-anim-dialog mfp-hide apply-popup">
+			<div class="small-dialog-headline">
+				<h2><i class="fa fa-linkedin"></i> Agregar Linkedinn</h2>
+			</div>
+
+			<div class="small-dialog-content">
+				<form action="/?action=add_twit" method="post" enctype="multipart/form-data" >
+					<input type="text" placeholder="Perfil de linkedinn" name="twit" value=""/>
+
+					<div class="margin-top-20"></div>
+					<div class="divider"></div>
+
+					<input class="send" type="submit" name="enviar" value="Agregar" />
+				</form>
+			</div>
+		</div>
+		<div id="small-dialog-contra" class="zoom-anim-dialog mfp-hide apply-popup">
+			<div class="small-dialog-headline">
+				<h2><i class="fa fa-lock"></i> Modificar Contraseña</h2>
+			</div>
+
+			<div class="small-dialog-content">
+				<form action="/?action=modif_contra" method="post" enctype="multipart/form-data">
+					<div id="ver_pass" >
+						<p style="line-height:75px; vertical-align:middle; text-align:center; color:#333; font-weight:bold;">Nueva Contraseña:  <input type="text" name="contra" value="" />
+							<input type="submit" name="enviar" value="Cambiar" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+		<div class="six columns">
+			<div class="two-buttons">
+
+				<a href="/index.php?action=editarCv&usuario={dni_usuario}" class="button"><i class="fa fa-envelope"></i> Modificar CV</a>
+				<a href="/index.php?action=ver_cv&usuario={dni_usuario}" class="button dark" ><i class="fa fa-star"></i> Ver CV</a>
+				<a href="#small-dialog-contra" class="popup-with-zoom-anim button" style="margin-top: 111px;" title="Modificar Contraseña">Modificar Contraseña</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<!-- Content
+================================================== -->
+<div class="container">
+	
+	<!-- Table -->
+	<div class="sixteen columns">
+
+		<p class="margin-bottom-35"><i class="fa fa-file-text"></i> <strong>Mis Postulaciones:</strong> Tus postulaciones cadudan al cabo de 30 días.  <img src="/images/new.png" alt="nuevo" style="width: 30px; display: inline-block; margin-left: 30px; line-height: 30px; vertical-align: middle" /> ¡Si completas al maximo tu perfil vas a poder adjuntar tu CV personalizado!</p>
+
+		<table class="manage-table responsive-table">
+
+			<tr>
+				<th><i class="fa fa-file-text"></i> Empleo</th>
+				<th><i class="fa fa-map-marker"></i> Ubicación</th>
+				<th><i class="fa fa-calendar"></i> Fecha Postulación</th>
+				<th><i class="fa fa-question-circle"></i> Estado</th>
+				<th><i class="fa fa-user"></i> Notificaciones</th>
+				<th></th>
+			</tr>
+					
+			<!-- Item #1 -->
+			<!-- BEGIN mis_postulaciones -->
+			<tr>
+				<td class="title"><a href="#">{titulo}</a></td>
+				<td class="centered">{localidad}</td>
+				<td>{publicacion}</td>
+				<td>{activo}</td>
+				<td class="centered">-</td>
+				<td class="action">
+					<a href="#" class="delete" style="display: none;"><i class="fa fa-remove"></i> Cancelar</a>
+					<img src="../images/icon_recibido.jpg" alt="Recibido" title="Posulación recibida" style="margin-top:6px;" />{visto}{megusta}
+				</td>
+			</tr>
+			 <!-- END mis_postulaciones -->
+					
+			
+
+		</table>
+
+		<br>
+		<a href="#" class="button" style="display: none;">Add Job</a>
+
+	</div>
+
+</div>
+
+
+	<!-- Footer
+    ================================================== -->
+	<div class="margin-top-0"></div>
+
+	<div id="footer">
+		<!-- Main -->
+		<div class="container">
+
+			<div class="seven columns">
+				<h4>MANTENTE INFORMADO</h4>
+				<p>Recibí las últimas ofertas de trabajo en tu mail, segun tus preferencias.</p>
+				<a href="#" class="button">Comenzar</a>
+			</div>
+
+			<div class="three columns">
+				<h4>USUARIOS</h4>
+				<ul class="footer-links">
+					<li><a href="/ingresarCv" title="Nuevo Usuario">Nuevo Usuario</a></li>
+					<li><a href="/recuperar" title="Recordar Contrase&ntilde;a">Recordar Contrase&ntilde;a</a></li>
+					<li><a href="/empleos" title="Ofertas de trabajo">Ofertas de trabajo</a></li>
+					<li><a href="/ayuda.pdf" title="Ayuda" target="_blank">Ayuda</a></li>
+				</ul>
+			</div>
+
+			<div class="three columns">
+				<h4>EMPRESAS</h4>
+				<ul class="footer-links">
+					<li><a href="/alta_empresa" title="Registrar Empresa" >Registrar Empresa</a></li>
+					<li><a href="/servicios" title="servicios">servicios</a></li>
+					<li><a href="/clientes" title="Nuestros Clientes">Nuestros Clientes</a></li>
+				</ul>
+			</div>
+
+			<div class="three columns">
+				<h4>JOBTIME</h4>
+				<ul class="footer-links">
+					<li><a href="/quienes_somos" title="Quienes Somos">Quienes Somos</a></li>
+					<li><a href="/contacto" title="Contacto">Contacto</a></li>
+					<li><a href="/paginas_amigas" title="Páginas Amigas">Páginas Amigas</a></li>
+					<li><a href="/mapa" title="Mapa del Sito">Mapa del Sito</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- Bottom -->
+		<div class="container">
+			<div class="footer-bottom">
+				<div class="sixteen columns">
+					<h4>SIGUENOS</h4>
+					<ul class="social-icons">
+						<li><a class="facebook" href="http://www.facebook.com/jobtime"><i class="icon-facebook"></i></a></li>
+						<li><a class="twitter" href="http://www.twitter.com/empleosjobtime"><i class="icon-twitter"></i></a></li>
+						<li><a class="linkedin" href="http://www.linkedin.com/companies/jobtime-empleos"><i class="icon-linkedin"></i></a></li>
+					</ul>
+					<div class="copyrights">Copyright @ 2010 por JobTime. Todos los derechos reservados</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+<!-- Back To Top Button -->
+<div id="backtotop"><a href="#"></a></div>
+
+</div>
+<!-- Wrapper / End -->
+
+
+<!-- Scripts
+================================================== -->
+<script src="scripts/jquery-2.1.3.min.js"></script>
+<script src="scripts/custom.js"></script>
+<script src="scripts/jquery.superfish.js"></script>
+<script src="scripts/jquery.themepunch.tools.min.js"></script>
+<script src="scripts/jquery.themepunch.revolution.min.js"></script>
+<script src="scripts/jquery.themepunch.showbizpro.min.js"></script>
+<script src="scripts/jquery.flexslider-min.js"></script>
+<script src="scripts/chosen.jquery.min.js"></script>
+<script src="scripts/jquery.magnific-popup.min.js"></script>
+<script src="scripts/waypoints.min.js"></script>
+<script src="scripts/jquery.counterup.min.js"></script>
+<script src="scripts/jquery.jpanelmenu.js"></script>
+<script src="scripts/stacktable.js"></script>
+<script src="scripts/headroom.min.js"></script>
+<script>
+	function validar_cv()
+	{
+		if(document.getElementById("cv").value != "")
+		{
+			var fileSize = document.getElementById("cv").size;
+
+			if(fileSize > 3000000){
+				alert('El CV no debe superar los 3MB');
+				return false;
+			}
+		}
+		else
+		{
+			alert('Debes adjuntar el CV antes de guardar!');
+			return false;
+		}
+
+	}
+</script>
+<style>
+	#small-dialog-linkedin.apply-popup {
+		padding: 0;
+	}
+	#small-dialog-linkedin {
+		background: #fff;
+		padding: 30px 40px 35px 40px;
+		text-align: left;
+		max-width: 610px;
+		margin: 40px auto;
+		position: relative;
+		box-sizing: border-box;
+	}
+
+	#small-dialog-contra {
+		background: #fff;
+		padding: 30px 40px 35px 40px;
+		text-align: left;
+		max-width: 610px;
+		margin: 40px auto;
+		position: relative;
+		box-sizing: border-box;
+	}
+</style>

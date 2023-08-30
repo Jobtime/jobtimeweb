@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="es"> <!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JobTime - Ofertas de empleos y trabajo en Tandil, Azul, Olavarria y la zona</title>
+<meta http-equiv="Content-Language" content="es" />
+<meta name="title" content="Portal de búsqueda de empleos y trabajo en Tandil, Azul, Olavarria y la Zona" />
+<meta name="Description" content="El portal de búsqueda y selección de personal líder a nivel zonal. Ofrecimientos de trabajos y empleos en Tandil, Azul, Olavarria y la zona. Publicación gratuita de ofertas de trabajo y empleo, al igual que carga de currículos. Banco de Cv´s en Tandil, Azul, Olavarria, Buenos Aires y toda Argentina." />
+<meta name="keywords" content="Empleos Tandil, Consultoras Tandil, Selección de personal Tandil, Búsqueda de empleos, Ofertas laborales Tandil, Se necesita en Tandil, Empleos provincia de Buenos Aires, Empleos zona Tandil, Laboral Tandil, Empleos en tandil, Jobtime, Jobtime en tandil, jobtime consultora, jobtime consultora empresarial, consultora empresarial, empleo tandil, trabajo en tandil, jobtime trabajo, trabajo tandil, Busqueda de trabajo, Ofertas de Trabajo."/>
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9889141407917846"
+     crossorigin="anonymous"></script>
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="csss/style.css">
+<link rel="stylesheet" href="csss/colors/green.css" id="colors">
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+<![endif]-->
+{gtm}	
+</head>
+
+<body>
+<div id="wrapper">
+
+
+<!-- Header
+================================================== -->
+<header class="sticky-header">
+<!-- Navigation -->
+<div id="mobile-navigation">
+	<a href="#menu" class="menu-trigger"><i class="fa fa-reorder"></i> <img class="logo_mobile" src="images/logo.png" alt="Jobtime" /></a>
+</div>
+
+<div class="container">
+	<div class="sixteen columns">
+	
+		<!-- Logo -->
+		<div id="logo">
+			<h1><a href="/"><img src="images/logo.png" alt="Jobtime" /></a></h1>
+		</div>
+
+		<!-- Menu -->
+		<nav id="navigation" class="menu">
+			<ul id="responsive">
+
+				<li class="inicio"><a href="/">Inicio</a></li>
+
+				<li><a href="/quienes_somos{usuario_logeado}">Quienes Somos</a></li>
+
+				<li><a href="/servicios{usuario_logeado}">servicios</a></li>
+
+				<li><a href="/empleos{usuario_logeado}">Empleos</a></li>
+
+				<li><a href="/clientes{usuario_logeado}">Nuestras empresas</a></li>
+				
+				<li><a href="{url_logeado}"><i class="fa fa-user" {ocultar_munieco}></i> {inicio_login}</a></li>
+				
+				<li {ocultar_user_loguiado}><a href="/alta_empresa"><i class="fa fa-lock"></i> Soy Empresa</a></li>
+				
+				<li class="ocultar_usuario_sin_logear" {mostrar_user_loguiado}><a href="/logout"><i class="fa fa-sign-out"></i> Salir</a></li>
+
+			</ul>
+
+
+		</nav>
+
+		
+	</div>
+</div>
+</header>
+<div class="clearfix"></div>
+
+
+<!-- Banner
+================================================== -->
+<div id="banner" style="background-image: url(images/banner-home-01.jpg)" class="parallax background" data-img-width="2000" data-img-height="1330" data-diff="400">
+	<div class="container">
+		<div class="sixteen columns">
+			
+			<div class="search-container">
+
+				<!-- Form -->
+				<h2>Buscar trabajo</h2>
+			<form action="/buscar_empleo" method="post" >
+				<input type="text" class="ico-01" placeholder="Trabajo, palabras claves, empresa.." name="edit-name" value=""/>
+				<input type="text" class="ico-02" placeholder="Ciudad, provincia o regíon" value=""/>
+				<button type="submit"><i class="fa fa-search icono_buscar"></i><span id="palabra_buscar">BUSCAR</span></button>
+
+				<!-- Browse Jobs -->
+				<div class="browse-jobs">
+					Buscar ofertas de trabajo por <a href="/buscar_empleo"> categoria</a> o <a href="/buscar_empleo">ubicacíon</a>
+				</div>
+				
+				<!-- Announce -->
+				<div class="announce">
+					Mas de <strong>{empleos_vigentes}</strong> ofertas de trabajo te estan esperando!
+				</div>
+			</form>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<!-- Content
+================================================== -->
+
+
+
+
+<div class="container container_home">
+	
+	<!-- Recent Jobs -->
+	<div class="eleven columns">
+	<div class="padding-right">
+		<h3 class="margin-bottom-25 tituloh3">Ofertas de trabajo destacadas!</h3>
+		<ul class="job-list">
+			<!-- BEGIN listado_ofertas_express -->
+			<li class="highlighted">{ver_home_express}
+				<img src="../images/empresas/{logo}.jpg" alt="">
+				<div class="job-list-content">
+					<h4>{titulo_empleo} <span class="{color_jornada}">{jornada_empleo}</span></h4>
+					<div class="job-icons">
+						<span><i class="fa fa-briefcase"></i> {puesto_trabajo}</span>
+						<span><i class="fa fa-map-marker"></i> {ciudad_empleo}</span>
+						<span><i class="fa fa-calendar"></i> {publicacion}</span>
+					</div>
+				</div>
+				</a>
+				<div class="clearfix"></div>
+			</li>
+			<!-- END listado_ofertas_express -->
+			
+			<!-- BEGIN listado_ofertas -->
+			<li >{ver_home}
+				<img src="../images/empresas/{logo}.jpg" alt="{logo}" />
+				<div class="job-list-content">
+					<h4>{titulo_trabajo} <span class="{color_jornada}">{dispo}</span></h4>
+					<div class="job-icons">
+						<span><i class="fa fa-briefcase"></i> {puesto_trabajo}</span>
+						<span><i class="fa fa-map-marker"></i> {ciudad}</span>
+						<span><i class="fa fa-calendar"></i> {publicacion}</span>
+					</div>
+				</div>
+				</a>
+				<div class="clearfix"></div>
+			</li>
+			<!-- END listado_ofertas -->
+
+			
+		</ul>
+
+		<a href="?action=empleos" class="button centered"><i class="fa fa-plus-circle"></i> Ver mas Ofertas de Empleo</a>
+		<div class="margin-bottom-55"></div>
+	</div>
+	</div>
+
+	<!-- Job Spotlight -->
+	<div class="five columns" >
+		<h3 class="margin-bottom-5" {no_tiene_express}>Ofertas de trabajo Urgentes</h3>
+
+		<!-- Navigation -->
+		<div class="showbiz-navigation" {no_tiene_express}>
+			<div id="showbiz_left_1" class="sb-navigation-left"><i class="fa fa-angle-left"></i></div>
+			<div id="showbiz_right_1" class="sb-navigation-right"><i class="fa fa-angle-right"></i></div>
+		</div>
+		<div class="clearfix"></div>
+		
+		<!-- Showbiz Container -->
+		<div id="job-spotlight" class="showbiz-container" {no_tiene_express}>
+			<div class="showbiz" data-left="#showbiz_left_1" data-right="#showbiz_right_1" data-play="#showbiz_play_1" >
+				<div class="overflowholder">
+
+					<ul>
+						<!-- BEGIN listado_ofertas_express_der -->
+						<li>
+							<div class="job-spotlight">
+								{ver_home_express}<h4>{titulo_empleo} <span class="{color_jornada}">{dispo}</span></h4></a>
+								<span><i class="fa fa-map-marker"></i> {ciudad}</span>
+								<span><i class="fa fa-calendar"></i> {publicacion}</span>
+								<p>{puesto_trabajo}</p>
+								{ver_home_express_a} Ver Empleo</a>
+							</div>
+						</li>
+						<!-- END listado_ofertas_express_der -->
+
+
+					</ul>
+					<div class="clearfix"></div>
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<h3 class="margin-bottom-5">¡Registrá tu empresa GRATIS!</h3>
+		<div class="clearfix" style="margin-bottom: 10px;"></div>
+		<div class="showbiz-container">
+			<div class="showbiz"  >
+				<div class="overflowholder">
+
+
+					<div class="job-spotlight">
+						<strong>Jobtime Empresas</strong><br/>
+						<span>Nuestra meta hacia las empresas es brindarle una herramienta útil en el proceso de búsqueda y selección de personal.
+						Confiamos plenamente en nuestro trabajo y seriedad, intentando fortalecer los vínculos con el sector empresarial y que éste en su calidad de empleador, pueda contar con el mejor capital humano.
+						</span>
+						<span><a href="/alta_empresa" class="button">Registrá tu empresa</a></span>
+					</div>
+
+
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<h3 class="margin-bottom-5">Aviso EMEPLEO EXPRESS</h3>
+		<div class="clearfix" style="margin-bottom: 10px;"></div>
+		<!-- Showbiz Container -->
+		<div class="showbiz-container">
+			<div class="showbiz"  >
+				<div class="overflowholder">
+
+
+							<div class="job-spotlight">
+								<a href="/express"><img src="../images/banner_aviso_express.gif" alt="" style="border:none;"></a>
+							</div>
+						
+					
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<div class="showbiz-container">
+			<div class="showbiz"  >
+				<div class="overflowholder">
+
+
+							<div class="job-spotlight">
+								<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+								<!-- Jobtime Home -->
+								<ins class="adsbygoogle"
+									 style="display:block"
+									 data-ad-client="ca-pub-9889141407917846"
+									 data-ad-slot="7404128282"
+									 data-ad-format="auto"
+									 data-full-width-responsive="true"></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
+
+
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<h3 class="margin-bottom-5">Los empleos mas buscados</h3>
+		<div class="clearfix" style="margin-bottom: 10px;"></div>
+		<!-- Showbiz Container -->
+		<div class="showbiz-container">
+			<div class="showbiz"  >
+				<div class="overflowholder">
+
+
+					<div class="job-spotlight" style="float:left; padding: 10px;">
+						<ul style="width: auto; position: relative;">
+							<li class="chico"><a href="/?action=buscar_empleo&page=1&ciudad=349&area=" title="Empleos en tandil">Empleos en tandil</a></li>
+							<li class="grande"><a href="/?action=buscar_empleo&page=1&ciudad=349&area=" title="Trabajo Tandil">Trabajo Tandil</a></li>
+							<li class="mediano"><a href="/" title="Buscar trabajo">Buscar trabajo</a></li>
+							<li class="chico"><a href="/?action=buscar_empleo&page=1&ciudad=280&area=" title="Trabajo en olavarria">Trabajo en olavarria </a></li>
+							<li class="grande"><a href="/?action=buscar_empleo&page=1&ciudad=280&area=" title="ofertas empleos olavarria">ofertas empleos olavarria</a></li>
+							<li class="masgrande"><a href="/?action=buscar_empleo&page=1&ciudad=349&area=" title="Trabajo Tandil">tandil </a></li>
+							<li class="chico"><a href="/?action=buscar_empleo&page=1&ciudad=349&area=" title="trabajar en tandil">trabajar en tandil </a></li>
+							<li class="grande"><a href="/?action=buscar_empleo&page=1&ciudad=349&area=" title="Trabajo">Trabajo </a></li>
+							<li class="mediano"><a href="/" title="empleo">empleo </a></li>
+							<li class="grande"><a href="/buscar-empleo/IBM" title="trabajo en ibm tandil">trabajo en ibm tandil</a></li>
+							<li class="grande"><a href="/buscar-empleo/" title="buscador de empeleo">buscador de empeleo </a></li>
+							<li class="chico"><a href="/buscar-empleo/WM%20Argentina" title="wma argentina">wma argentina</a></li>
+							<li class="masgrande"><a href="/buscar-empleo/sistemas-y-tecnolog%C3%ADa-y-it/6" title="empleo programador">empleo programador</a></li>
+							<li class="chico"><a href="/?action=buscar_empleo&page=1&ciudad=128&area=" title="empleo en balcarce">empleo en balcarce</a></li>
+							<li class="mediano"><a href="/?action=buscar_empleo&page=1&ciudad=125&area=" title="empleos en azul">empleos en azul</a></li>
+							<li class="chico"><a href="/buscar-empleo/Dokko%20Group" title="dokko group tandil">dokko group tandil</a></li>
+							<li class="grande"><a href="/buscar-empleo/Accenture" title="accenture tandil">accenture tandil</a></li>
+						</ul>
+					</div>
+
+
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="showbiz-container">
+			<div class="showbiz"  >
+				<div class="overflowholder">
+
+
+					<div class="job-spotlight">
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- home izquiero bajo -->
+						<ins class="adsbygoogle"
+							 style="display:block"
+							 data-ad-client="ca-pub-9889141407917846"
+							 data-ad-slot="3760695464"
+							 data-ad-format="auto"
+							 data-full-width-responsive="true"></ins>
+						<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+
+
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+	</div>
+
+	
+
+	</div>
+</div>
+
+<!-- Icon Boxes -->
+<div class="section-background top-0">
+	<div class="container ">
+
+		<div class="one-third column">
+			<div class="icon-box rounded alt">
+				<a href="/ingresar_cv#tab2" title="registrarte"> <i class="ln ln-icon-Folder-Add"></i></a>
+				<h4>Ingresar CV</h4>
+				<p>Con solo pocos pasos podrás llenar tu CV en una plataforma hecha a medida de las necesidades de los requerimientos del mercado laboral de forma GRATUITA. <br/> Ya más de <strong>{cantidad_user}</strong> personas confian en nosotros!</p>
+			</div>
+		</div>
+
+		<div class="one-third column">
+			<div class="icon-box rounded alt">
+				<a href="/empleos" title="Buscar empleo"><i class="ln ln-icon-Search-onCloud"></i></a>
+				<h4>Buscar Empleos</h4>
+				<p>Busca entre mas de <strong>{empleos_vigentes}</strong> empleos seleccionados para vos, podras buscar por ciudad, provincia, etc.</p>
+			</div>
+		</div>
+
+		<div class="one-third column">
+			<div class="icon-box rounded alt">
+				<a href="/ingresar_cv#tab1" title="Buscar empleados"><i class="ln ln-icon-Business-ManWoman"></i></a>
+				<h4>Buscar Empleados</h4>
+				<p>Nuestra meta hacia las empresas es brindarle una herramienta útil en el proceso de búsqueda y selección de personal. Forma parte de nuestra comunidad y únete a las mas de <strong>{empresas_vigentes}</strong> empresas que ya lo son!</p>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-- Icon Boxes / End -->
+
+<!-- Testimonials -->
+<div id="testimonials">
+	<!-- Slider -->
+	<div class="container">
+		<div class="sixteen columns">
+			<div class="testimonials-slider">
+				  <ul class="slides">
+				    <li>
+				      <p>La verdad que me fue muy bien con esta plataforma, muy contento de haber encontrado trabajo.
+				      <span>Gomez Benjamín</span></p>
+				    </li>
+
+				    <li>
+				      <p>Tuve muchas entrevistas hasta que quede encontre el trabajo que buscaba, Muchas gracias!.
+				      <span>Hernandez Roberto</span></p>
+				    </li>
+
+				  </ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Infobox -->
+<div class="infobox margin-bottom-0">
+	<div class="container">
+		<div class="sixteen columns">Crea tu perfil completando tu CV y consigue tu trabajo ideal <a href="/ingresar_cv#tab2">¡Registrate!</a></div>
+	</div>
+</div>
+
+
+<!-- Footer
+================================================== -->
+<div class="margin-top-0"></div>
+
+<div id="footer">
+	<!-- Main -->
+	<div class="container">
+
+		<div class="seven columns">
+			<h4>MANTENTE INFORMADO</h4>
+			<p>Recibí las últimas ofertas de trabajo en tu mail, segun tus preferencias.</p>
+			<a href="#" class="button">Comenzar</a>
+		</div>
+
+		<div class="three columns">
+			<h4>USUARIOS</h4>
+			<ul class="footer-links">
+				<li><a href="/ingresar_cv#tab2" title="Nuevo Usuario">Nuevo Usuario</a></li>
+				<li><a href="/recuperar" title="Recordar Contrase&ntilde;a">Recordar Contrase&ntilde;a</a></li>
+				<li><a href="/empleos" title="Ofertas de trabajo">Ofertas de trabajo</a></li>
+				<li><a href="/ayuda.pdf" title="Ayuda" target="_blank">Ayuda</a></li>
+			</ul>
+		</div>
+		
+		<div class="three columns">
+			<h4>EMPRESAS</h4>
+			<ul class="footer-links">
+				<li><a href="/alta_empresa" title="Registrar Empresa" >Registrar Empresa</a></li>
+				<li><a href="/servicios" title="servicios">servicios</a></li>
+				<li><a href="/clientes" title="Nuestros Clientes">Nuestros Clientes</a></li>
+			</ul>
+		</div>		
+
+		<div class="three columns">
+			<h4>JOBTIME</h4>
+			<ul class="footer-links">
+				<li><a href="/quienes_somos" title="Quienes Somos">Quienes Somos</a></li>
+				<li><a href="/contacto" title="Contacto">Contacto</a></li>
+				<li><a href="/paginas_amigas" title="Páginas Amigas">Páginas Amigas</a></li>
+				<li><a href="/mapa" title="Mapa del Sito">Mapa del Sito</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Bottom -->
+	<div class="container">
+		<div class="footer-bottom">
+			<div class="sixteen columns">
+				<h4>SIGUENOS</h4>
+				<ul class="social-icons">
+					<li><a class="facebook" href="http://www.facebook.com/jobtime"><i class="icon-facebook"></i></a></li>
+					<li><a class="twitter" href="http://www.twitter.com/empleosjobtime"><i class="icon-twitter"></i></a></li>
+					<li><a class="linkedin" href="http://www.linkedin.com/companies/jobtime-empleos"><i class="icon-linkedin"></i></a></li>
+				</ul>
+				<div class="copyrights">Copyright @ 2010 por JobTime. Todos los derechos reservados</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- Back To Top Button -->
+<div id="backtotop"><a href="#"></a></div>
+
+</div>
+<!-- Wrapper / End -->
+
+
+<!-- Scripts
+================================================== -->
+<script src="scripts/jquery-2.1.3.min.js"></script>
+<script src="scripts/custom.js"></script>
+<script src="scripts/jquery.superfish.js"></script>
+<script src="scripts/jquery.themepunch.tools.min.js"></script>
+<script src="scripts/jquery.themepunch.revolution.min.js"></script>
+<script src="scripts/jquery.themepunch.showbizpro.min.js"></script>
+<script src="scripts/jquery.flexslider-min.js"></script>
+<script src="scripts/chosen.jquery.min.js"></script>
+<script src="scripts/jquery.magnific-popup.min.js"></script>
+<script src="scripts/waypoints.min.js"></script>
+<script src="scripts/jquery.counterup.min.js"></script>
+<script src="scripts/jquery.jpanelmenu.js"></script>
+<script src="scripts/stacktable.js"></script>
+<script src="scripts/headroom.min.js"></script>
+
+
+
+
+</body>
+</html>
+<!-- Localized -->
